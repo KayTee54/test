@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.2 on win32)" generated="2025-04-06T16:19:21.183616" rpa="false" schemaversion="5">
+<suite id="s1" name="Newtesy1" source="C:\Users\gingi\Auto\suite\newtesy1.robot">
+<test id="s1-t1" name="Tcs2" line="15">
+<kw name="Open browser url" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-06T16:19:22.402441" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+<msg time="2025-04-06T16:19:22.402441" level="INFO">Opening browser 'chrome' to base url 'https://fnb.kiotviet.vn/'.</msg>
+<arg>${url_goto}</arg>
+<arg>chrome</arg>
+<arg>browser1</arg>
+<arg>executable_path=E:\\Download\\chromedriver-win64\\chromedriver.exe</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-06T16:19:22.401448" elapsed="3.726097"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-06T16:19:26.128561" elapsed="0.108594"/>
+</kw>
+<kw name="login">
+<kw name="login1" owner="action">
+<kw name="Retailer locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:26.244161" level="INFO">${retailer} = //*[@id="Retailer"]</msg>
+<var>${retailer}</var>
+<arg>//*[@id="Retailer"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-06T16:19:26.243151" elapsed="0.001010"/>
+</kw>
+<return>
+<value>${retailer}</value>
+<status status="PASS" start="2025-04-06T16:19:26.244161" elapsed="0.000990"/>
+</return>
+<msg time="2025-04-06T16:19:26.246154" level="INFO">${retail} = //*[@id="Retailer"]</msg>
+<var>${retail}</var>
+<status status="PASS" start="2025-04-06T16:19:26.242151" elapsed="0.004003"/>
+</kw>
+<kw name="username locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:26.251428" level="INFO">${username} = //*[@id="UserName"]</msg>
+<var>${username}</var>
+<arg>//*[@id="UserName"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-06T16:19:26.248400" elapsed="0.004056"/>
+</kw>
+<return>
+<value>${username}</value>
+<status status="PASS" start="2025-04-06T16:19:26.254464" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-06T16:19:26.255421" level="INFO">${user} = //*[@id="UserName"]</msg>
+<var>${user}</var>
+<status status="PASS" start="2025-04-06T16:19:26.247152" elapsed="0.008269"/>
+</kw>
+<kw name="pw locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:26.258444" level="INFO">${pw} = //*[@id="Password"]</msg>
+<var>${pw}</var>
+<arg>//*[@id="Password"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-06T16:19:26.257417" elapsed="0.001027"/>
+</kw>
+<return>
+<value>${pw}</value>
+<status status="PASS" start="2025-04-06T16:19:26.258444" elapsed="0.002005"/>
+</return>
+<msg time="2025-04-06T16:19:26.261431" level="INFO">${pw} = //*[@id="Password"]</msg>
+<var>${pw}</var>
+<status status="PASS" start="2025-04-06T16:19:26.256421" elapsed="0.006001"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${retail}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-06T16:19:26.263421" elapsed="0.133708"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-06T16:19:26.399287" level="INFO">Typing text 'newfnb01' into text field '//*[@id="Retailer"]'.</msg>
+<arg>${retail}</arg>
+<arg>${retailer}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-06T16:19:26.398128" elapsed="0.251206"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-06T16:19:26.650332" level="INFO">Typing text 'admin' into text field '//*[@id="UserName"]'.</msg>
+<arg>${user}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-06T16:19:26.649334" elapsed="0.188114"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-06T16:19:26.838759" level="INFO">Typing text '4321' into text field '//*[@id="Password"]'.</msg>
+<arg>${pw}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-06T16:19:26.837448" elapsed="0.196587"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-06T16:19:27.036282" level="INFO">Clicking element '//*[@id="btn-login"]'.</msg>
+<arg>${ql}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-06T16:19:27.035027" elapsed="0.208781"/>
+</kw>
+<arg>newfnb01</arg>
+<arg>admin</arg>
+<arg>4321</arg>
+<status status="PASS" start="2025-04-06T16:19:26.240152" elapsed="1.004652"/>
+</kw>
+<status status="PASS" start="2025-04-06T16:19:26.238154" elapsed="1.006650"/>
+</kw>
+<kw name="loginapi" owner="api">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-06T16:19:27.250813" level="INFO">${body} = {'provider': 'credentials', 'UserName': 'admin', 'Password': '4321'}</msg>
+<var>${body}</var>
+<arg>provider=credentials</arg>
+<arg>UserName=admin</arg>
+<arg>Password=4321</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-06T16:19:27.249807" elapsed="0.001995"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-04-06T16:19:27.254181" level="INFO">${json_string} = {"provider": "credentials", "UserName": "admin", "Password": "4321"}</msg>
+<var>${json_string}</var>
+<arg>json.dumps(${body})</arg>
+<arg>json</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-04-06T16:19:27.251802" elapsed="0.002379"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-06T16:19:27.256711" level="INFO">${header} = {'content-type': 'application/json', 'retailer': 'newfnb01'}</msg>
+<var>${header}</var>
+<arg>content-type=application/json</arg>
+<arg>retailer=newfnb01</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-06T16:19:27.254181" elapsed="0.002530"/>
+</kw>
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-04-06T16:19:27.258733" level="INFO">Creating Session using : alias=login, url=https://fnb.kiotviet.vn, headers={'content-type': 'application/json', 'retailer': 'newfnb01'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<arg>login</arg>
+<arg>https://fnb.kiotviet.vn</arg>
+<arg>headers=${header}</arg>
+<arg>verify=${True}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-04-06T16:19:27.256711" elapsed="0.003021"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2025-04-06T16:19:27.382555" level="INFO">POST Request : url=https://fnb.kiotviet.vn/api/users/auth-login 
+ path_url=/api/users/auth-login 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'retailer': 'newfnb01', 'Content-Length': '68'} 
+ body={"provider": "credentials", "UserName": "admin", "Password": "4321"} 
+ </msg>
+<msg time="2025-04-06T16:19:27.382555" level="INFO">POST Response : url=https://fnb.kiotviet.vn/api/users/auth-login 
+ status=200, reason=OK 
+ headers={'content-type': 'application/json; charset=utf-8', 'cache-control': 'private', 'vary': 'Accept,Accept-Encoding', 'fnb-pos-version': '1.0.1-f', 'x-powered-by': 'ServiceStack/5,40 Net45/Windows', 'access-control-allow-methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS, GET, POST, PUT, DELETE, OPTIONS', 'access-control-allow-headers': 'Content-Type, Origin, X-Requested-With, Content-Type, Accept, Authorization, Retailer, BranchId, Real-Time-Token, fnb-pos-version, kv-version, X-GROUP-ID, X-RETAILER-CODE, x-retailer-code, x-retailer-id, X-XSRF-Token, app, X-Group-Id, X-Branch-Id, X-Device-Id, X-Fingerprint-Key, X-App-Name, X-App-Version, X-System-Info', 'set-cookie': 'ss-id=4KtRgDYYieV46xp9tFsn; path=/; HttpOnly, ss-pid=80PI6zcGSmoe233BBvX2; expires=Thu, 06-Apr-2045 09:19:27 GMT; path=/; HttpOnly, ss-opt=temp; expires=Thu, 06-Apr-2045 09:19:27 GMT; path=/; HttpOnly, l_742710_68591=vi-VN; expires=Thu, 06-Apr-2045 09:19:27 GMT; path=/; HttpOnly, Retailer=newfnb01; expires=Thu, 06-Apr-2045 09:19:27 GMT; path=/; HttpOnly, newfnb=1; expires=Thu, 06-Apr-2045 09:19:27 GMT; path=/; HttpOnly, LatestBranch_742710_68591=29427; expires=Thu, 06-Apr-2045 09:19:27 GMT; path=/; HttpOnly, ss-tok=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IndYYSJ9.eyJpc3MiOiJrdnNzand0Iiwic3ViIjo2ODU5MSwiaWF0IjoxNzQzOTMxMTY3LCJleHAiOjE3NDYzNTAzNjcsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluIiwicm9sZXMiOlsiVXNlciJdLCJrdnNvdXJjZSI6ImZuYiIsImt2c2VzIjoiYzY2YmNlOWI0ZjI1NDZhNWE5NDlhMDc2NmMzNjk3YWYiLCJrdnVpZCI6Njg1OTEsImt2dWd2bmFtZSI6ODQxMjM0NTY3ODksImt2bGFuZyI6InZpLVZOIiwia3Z1dHlwZSI6MCwia3Z1bGltaXQiOiJGYWxzZSIsImt2dWFkbWluIjoiVHJ1ZSIsImt2dWFjdCI6IlRydWUiLCJrdnVsaW1pdHRyYW5zIjoiRmFsc2UiLCJrdnVzaG93c3VtIjoiVHJ1ZSIsImt2YmlkIjoyOTQyNywia3ZyaW5kaWQiOjE1LCJrdnJjb2RlIjoibmV3Zm5iMDEiLCJrdnJpZCI6NzQyNzEwLCJrdnVyaWQiOjc0MjcxMCwia3ZyZ2lkIjozMywiYXBwYnJhbmRpbmdpZCI6MCwicGVybXMiOiIifQ.vQ-Q3mq1taBJjERyckFo_Y_dcgZdyO1F2m2V9cMxU4yDQQjaQhBEg0vHEymMvvSgzMnRpzinMFoHpko0jmOcmUl-rpi4ol2ibLspwzDARnZW__jFRvQkzx-0zucRMlIZJquuK5-u7L-YShzy1mrDrt_XaKflcfcCKwakSXzDSrsr_fJhhDfM1CDmSeUF_ImMWF1VBXG4yWblCfGjAzqYMTdaAiP0nZc90YKV1t6rN7RW-aRBXD5x8PonuKPqDg5L2LaWt7QUhPvEIts_7wa2PWZKDj7ECnX1U57n3UjbM7bzL17ND6yCjh2V0j5EB8BgEHjlLbfaVAazZbASyKpc1Q; expires=Sun, 04-May-2025 09:19:27 GMT; path=/; HttpOnly', 'access-control-allow-origin': '*', 'access-control-expose-headers': 'FnB-POS-Version', 'x-frame-options': 'sameorigin', 'date': 'Sun, 06 Apr 2025 09:19:27 GMT', 'server': 'kiotviet', 'transfer-encoding': 'chunked', 'content-encoding': 'gzip'} 
+ body={"UserId":68591,"UserName":"admin","SessionId":"4KtRgDYYieV46xp9tFsn","BearerToken":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IndYYSJ9.eyJpc3MiOiJrdnNzand0Iiwic3ViIjo2ODU5MSwiaWF0IjoxNzQzOTMxMTY3LCJleHAiOjE3NDYzNTAzNjcsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluIiwicm9sZXMiOlsiVXNlciJdLCJrdnNvdXJjZSI6ImZuYiIsImt2c2VzIjoiYzY2YmNlOWI0ZjI1NDZhNWE5NDlhMDc2NmMzNjk3YWYiLCJrdnVpZCI6Njg1OTEsImt2dWd2bmFtZSI6ODQxMjM0NTY3ODksImt2bGFuZyI6InZpLVZOIiwia3Z1dHlwZSI6MCwia3Z1bGltaXQiOiJGYWxzZSIsImt2dWFkbWluIjoiVHJ1ZSIsImt2dWFjdCI6IlRydWUiLCJrdnVsaW1pdHRyYW5zIjoiRmFsc2UiLCJrdnVzaG93c3VtIjoiVHJ1ZSIsImt2YmlkIjoyOTQyNywia3ZyaW5kaWQiOjE1LCJrdnJjb2RlIjoibmV3Zm5iMDEiLCJrdnJpZCI6NzQyNzEwLCJrdnVyaWQiOjc0MjcxMCwia3ZyZ2lkIjozMywiYXBwYnJhbmRpbmdpZCI6MCwicGVybXMiOiIifQ.vQ-Q3mq1taBJjERyckFo_Y_dcgZdyO1F2m2V9cMxU4yDQQjaQhBEg0vHEymMvvSgzMnRpzinMFoHpko0jmOcmUl-rpi4ol2ibLspwzDARnZW__jFRvQkzx-0zucRMlIZJquuK5-u7L-YShzy1mrDrt_XaKflcfcCKwakSXzDSrsr_fJhhDfM1CDmSeUF_ImMWF1VBXG4yWblCfGjAzqYMTdaAiP0nZc90YKV1t6rN7RW-aRBXD5x8PonuKPqDg5L2LaWt7QUhPvEIts_7wa2PWZKDj7ECnX1U57n3UjbM7bzL17ND6yCjh2V0j5EB8BgEHjlLbfaVAazZbASyKpc1Q","BranchId":29427,"IsUsingNewFnb":true,"IsNewLogin":true} 
+ </msg>
+<msg time="2025-04-06T16:19:27.383555" level="INFO">${respone} = &lt;Response [200]&gt;</msg>
+<var>${respone}</var>
+<arg>url=/api/users/auth-login</arg>
+<arg>alias=login</arg>
+<arg>data=${json_string}</arg>
+<arg>verify=${True}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-04-06T16:19:27.260731" elapsed="0.122824"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-06T16:19:27.386555" level="INFO">200</msg>
+<arg>${respone.status_code}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-06T16:19:27.384550" elapsed="0.003001"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:27.390641" level="INFO">${rsp} = {'UserId': 68591, 'UserName': 'admin', 'SessionId': '4KtRgDYYieV46xp9tFsn', 'BearerToken': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IndYYSJ9.eyJpc3MiOiJrdnNzand0Iiwic3ViIjo2ODU5MSwiaWF0IjoxNzQzOTM...</msg>
+<var>${rsp}</var>
+<arg>${respone.json()}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-06T16:19:27.387551" elapsed="0.003090"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:27.392637" level="INFO">${jpath} = $.BearerToken</msg>
+<var>${jpath}</var>
+<arg>$.BearerToken</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-06T16:19:27.391639" elapsed="0.000998"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2025-04-06T16:19:27.490821" level="INFO">${val} = ['eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IndYYSJ9.eyJpc3MiOiJrdnNzand0Iiwic3ViIjo2ODU5MSwiaWF0IjoxNzQzOTMxMTY3LCJleHAiOjE3NDYzNTAzNjcsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluIiwicm9sZXMiOlsiVXNlciJdL...</msg>
+<var>${val}</var>
+<arg>${rsp}</arg>
+<arg>${jpath}</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2025-04-06T16:19:27.393646" elapsed="0.097175"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${val[0]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-06T16:19:27.492081" elapsed="0.001678"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:27.501298" level="INFO">${TOKEN} = eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IndYYSJ9.eyJpc3MiOiJrdnNzand0Iiwic3ViIjo2ODU5MSwiaWF0IjoxNzQzOTMxMTY3LCJleHAiOjE3NDYzNTAzNjcsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluIiwicm9sZXMiOlsiVXNlciJdLCJ...</msg>
+<arg>${TOKEN}</arg>
+<arg>${val[0]}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-06T16:19:27.494795" elapsed="0.006503"/>
+</kw>
+<status status="PASS" start="2025-04-06T16:19:27.246804" elapsed="0.254494"/>
+</kw>
+<status status="PASS" start="2025-04-06T16:19:22.399218" elapsed="5.102080"/>
+</kw>
+<kw name="hover_product" owner="action">
+<kw name="producthover locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:27.504291" level="INFO">${product} = //section[@class='container']//ul[@class='menu']//li[@class='ng-scope has-child']//i[@class='fas fas fa-cube']/ancestor::a</msg>
+<var>${product}</var>
+<arg>//section[@class='container']//ul[@class='menu']//li[@class='ng-scope has-child']//i[@class='fas fas fa-cube']/ancestor::a</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-06T16:19:27.503293" elapsed="0.000998"/>
+</kw>
+<return>
+<value>${product}</value>
+<status status="PASS" start="2025-04-06T16:19:27.504291" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-06T16:19:27.505291" level="INFO">${prodhover} = //section[@class='container']//ul[@class='menu']//li[@class='ng-scope has-child']//i[@class='fas fas fa-cube']/ancestor::a</msg>
+<var>${prodhover}</var>
+<status status="PASS" start="2025-04-06T16:19:27.503293" elapsed="0.001998"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${prodhover}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-06T16:19:27.505291" elapsed="7.544599"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-04-06T16:19:35.050903" level="INFO">Simulating Mouse Over on element '//section[@class='container']//ul[@class='menu']//li[@class='ng-scope has-child']//i[@class='fas fas fa-cube']/ancestor::a'.</msg>
+<arg>${prodhover}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-04-06T16:19:35.050903" elapsed="0.352997"/>
+</kw>
+<status status="PASS" start="2025-04-06T16:19:27.502290" elapsed="7.901610"/>
+</kw>
+<kw name="click_list" owner="action">
+<kw name="list_product locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:35.409462" level="INFO">${list_product} = //section[@class='container']//ul[@class='menu']//li[@class='ng-scope has-child']//ul[@class='sub ng-scope']//i[@class='fa-fw fa fa-th']//ancestor::a</msg>
+<var>${list_product}</var>
+<arg>//section[@class='container']//ul[@class='menu']//li[@class='ng-scope has-child']//ul[@class='sub ng-scope']//i[@class='fa-fw fa fa-th']//ancestor::a</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-06T16:19:35.408369" elapsed="0.001093"/>
+</kw>
+<return>
+<value>${list_product}</value>
+<status status="PASS" start="2025-04-06T16:19:35.409462" elapsed="0.001023"/>
+</return>
+<msg time="2025-04-06T16:19:35.410485" level="INFO">${list_product} = //section[@class='container']//ul[@class='menu']//li[@class='ng-scope has-child']//ul[@class='sub ng-scope']//i[@class='fa-fw fa fa-th']//ancestor::a</msg>
+<var>${list_product}</var>
+<status status="PASS" start="2025-04-06T16:19:35.406347" elapsed="0.004138"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${list_product}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-06T16:19:35.411490" elapsed="0.058105"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-06T16:19:35.471600" level="INFO">Clicking element '//section[@class='container']//ul[@class='menu']//li[@class='ng-scope has-child']//ul[@class='sub ng-scope']//i[@class='fa-fw fa fa-th']//ancestor::a'.</msg>
+<arg>${list_product}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-06T16:19:35.470602" elapsed="6.626451"/>
+</kw>
+<status status="PASS" start="2025-04-06T16:19:35.404903" elapsed="6.692150"/>
+</kw>
+<kw name="hover_btn_new_and_click_add_product" owner="action">
+<kw name="btn_new locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:42.103052" level="INFO">${btn_new} = //div[@class='addProductBtn sm-popup']</msg>
+<var>${btn_new}</var>
+<arg>//div[@class='addProductBtn sm-popup']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-06T16:19:42.102056" elapsed="0.000996"/>
+</kw>
+<return>
+<value>${btn_new}</value>
+<status status="PASS" start="2025-04-06T16:19:42.104054" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-06T16:19:42.105052" level="INFO">${btn_new} = //div[@class='addProductBtn sm-popup']</msg>
+<var>${btn_new}</var>
+<status status="PASS" start="2025-04-06T16:19:42.100055" elapsed="0.004997"/>
+</kw>
+<kw name="normal_product locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:42.109046" level="INFO">${normal_product} = //div[@class='addProductBtn sm-popup']//ul//li//a[contains(text(), ' Thêm hàng hóa')]</msg>
+<var>${normal_product}</var>
+<arg>//div[@class='addProductBtn sm-popup']//ul//li//a[contains(text(), ' Thêm hàng hóa')]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-06T16:19:42.108046" elapsed="0.001000"/>
+</kw>
+<return>
+<value>${normal_product}</value>
+<status status="PASS" start="2025-04-06T16:19:42.109046" elapsed="0.001521"/>
+</return>
+<msg time="2025-04-06T16:19:42.110567" level="INFO">${normal_product} = //div[@class='addProductBtn sm-popup']//ul//li//a[contains(text(), ' Thêm hàng hóa')]</msg>
+<var>${normal_product}</var>
+<status status="PASS" start="2025-04-06T16:19:42.106050" elapsed="0.005536"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-04-06T16:19:42.113596" level="INFO">Simulating Mouse Over on element '//div[@class='addProductBtn sm-popup']'.</msg>
+<arg>${btn_new}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-04-06T16:19:42.111586" elapsed="1.226721"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-06T16:19:43.340310" level="INFO">Clicking element '//div[@class='addProductBtn sm-popup']//ul//li//a[contains(text(), ' Thêm hàng hóa')]'.</msg>
+<arg>${normal_product}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-06T16:19:43.339304" elapsed="2.830456"/>
+</kw>
+<status status="PASS" start="2025-04-06T16:19:42.098052" elapsed="4.072717"/>
+</kw>
+<kw name="add_form" owner="action">
+<kw name="Prod_code locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:46.175760" level="INFO">${prod_code} = //input[@ng-model='product.Code']</msg>
+<var>${prod_code}</var>
+<arg>//input[@ng-model='product.Code']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-06T16:19:46.174760" elapsed="0.001000"/>
+</kw>
+<return>
+<value>${prod_code}</value>
+<status status="PASS" start="2025-04-06T16:19:46.176755" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-06T16:19:46.177756" level="INFO">${prod_code} = //input[@ng-model='product.Code']</msg>
+<var>${prod_code}</var>
+<status status="PASS" start="2025-04-06T16:19:46.173757" elapsed="0.003999"/>
+</kw>
+<kw name="prod_name locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:46.181118" level="INFO">${prod_name} = //input[@ng-model='product.Name']</msg>
+<var>${prod_name}</var>
+<arg>//input[@ng-model='product.Name']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-06T16:19:46.179603" elapsed="0.001515"/>
+</kw>
+<return>
+<value>${prod_name}</value>
+<status status="PASS" start="2025-04-06T16:19:46.181118" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-06T16:19:46.182132" level="INFO">${prod_name} = //input[@ng-model='product.Name']</msg>
+<var>${prod_name}</var>
+<status status="PASS" start="2025-04-06T16:19:46.177756" elapsed="0.004376"/>
+</kw>
+<kw name="prod_cost locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:46.185136" level="INFO">${prod_cost} = //input[@ng-model='product.Cost']</msg>
+<var>${prod_cost}</var>
+<arg>//input[@ng-model='product.Cost']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-06T16:19:46.184137" elapsed="0.002014"/>
+</kw>
+<return>
+<value>${prod_cost}</value>
+<status status="PASS" start="2025-04-06T16:19:46.186151" elapsed="0.000989"/>
+</return>
+<msg time="2025-04-06T16:19:46.187140" level="INFO">${prod_cost} = //input[@ng-model='product.Cost']</msg>
+<var>${prod_cost}</var>
+<status status="PASS" start="2025-04-06T16:19:46.183136" elapsed="0.004004"/>
+</kw>
+<kw name="prod_baseprice locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:46.191151" level="INFO">${prod_baseprice} = //input[@ng-model='product.BasePrice']</msg>
+<var>${prod_baseprice}</var>
+<arg>//input[@ng-model='product.BasePrice']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-06T16:19:46.190136" elapsed="0.001015"/>
+</kw>
+<return>
+<value>${prod_baseprice}</value>
+<status status="PASS" start="2025-04-06T16:19:46.191151" elapsed="0.000987"/>
+</return>
+<msg time="2025-04-06T16:19:46.193133" level="INFO">${prod_baseprice} = //input[@ng-model='product.BasePrice']</msg>
+<var>${prod_baseprice}</var>
+<status status="PASS" start="2025-04-06T16:19:46.188138" elapsed="0.004995"/>
+</kw>
+<kw name="prod_weight locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:46.196385" level="INFO">${prod_weight} = //input[@ng-model='product.Weight']</msg>
+<var>${prod_weight}</var>
+<arg>//input[@ng-model='product.Weight']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-06T16:19:46.195337" elapsed="0.001048"/>
+</kw>
+<return>
+<value>${prod_weight}</value>
+<status status="PASS" start="2025-04-06T16:19:46.197574" elapsed="0.000515"/>
+</return>
+<msg time="2025-04-06T16:19:46.198089" level="INFO">${prod_weight} = //input[@ng-model='product.Weight']</msg>
+<var>${prod_weight}</var>
+<status status="PASS" start="2025-04-06T16:19:46.194140" elapsed="0.003949"/>
+</kw>
+<kw name="prod_onhand locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:46.201977" level="INFO">${prod_onhand} = //input[@ng-model='product.OnHand']</msg>
+<var>${prod_onhand}</var>
+<arg>//input[@ng-model='product.OnHand']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-06T16:19:46.200959" elapsed="0.001018"/>
+</kw>
+<return>
+<value>${prod_onhand}</value>
+<status status="PASS" start="2025-04-06T16:19:46.201977" elapsed="0.001267"/>
+</return>
+<msg time="2025-04-06T16:19:46.203244" level="INFO">${prod_onhand} = //input[@ng-model='product.OnHand']</msg>
+<var>${prod_onhand}</var>
+<status status="PASS" start="2025-04-06T16:19:46.199933" elapsed="0.004339"/>
+</kw>
+<kw name="form_arrow locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:46.207378" level="INFO">${form_arrow} = //kv-category-dropdownlist[@selected-id='product.CategoryId']//span[@class='k-select']//span[@class='k-icon k-i-arrow-s']</msg>
+<var>${form_arrow}</var>
+<arg>//kv-category-dropdownlist[@selected-id='product.CategoryId']//span[@class='k-select']//span[@class='k-icon k-i-arrow-s']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-06T16:19:46.206269" elapsed="0.001109"/>
+</kw>
+<return>
+<value>${form_arrow}</value>
+<status status="PASS" start="2025-04-06T16:19:46.207378" elapsed="0.001026"/>
+</return>
+<msg time="2025-04-06T16:19:46.208404" level="INFO">${form_arrow} = //kv-category-dropdownlist[@selected-id='product.CategoryId']//span[@class='k-select']//span[@class='k-icon k-i-arrow-s']</msg>
+<var>${form_arrow}</var>
+<status status="PASS" start="2025-04-06T16:19:46.204272" elapsed="0.005149"/>
+</kw>
+<kw name="search_prod_group locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:46.210419" level="INFO">${search_prod_group} = //div[@class='k-animation-container']//span[@class='k-icon k-i-search']//ancestor::span[@class='k-list-filter']//input[@role='listbox']</msg>
+<var>${search_prod_group}</var>
+<arg>//div[@class='k-animation-container']//span[@class='k-icon k-i-search']//ancestor::span[@class='k-list-filter']//input[@role='listbox']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-06T16:19:46.210419" elapsed="0.000997"/>
+</kw>
+<return>
+<value>${search_prod_group}</value>
+<status status="PASS" start="2025-04-06T16:19:46.211416" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-06T16:19:46.211416" level="INFO">${search_prod_group} = //div[@class='k-animation-container']//span[@class='k-icon k-i-search']//ancestor::span[@class='k-list-filter']//input[@role='listbox']</msg>
+<var>${search_prod_group}</var>
+<status status="PASS" start="2025-04-06T16:19:46.209421" elapsed="0.001995"/>
+</kw>
+<kw name="prod_group locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:46.214417" level="INFO">${prod_group} = //div[@class='k-animation-container']//span[contains(text(), 'check tracking rabbitmq')]</msg>
+<var>${prod_group}</var>
+<arg>//div[@class='k-animation-container']//span[contains(text(), 'check tracking rabbitmq')]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-06T16:19:46.213421" elapsed="0.000996"/>
+</kw>
+<return>
+<value>${prod_group}</value>
+<status status="PASS" start="2025-04-06T16:19:46.215420" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-06T16:19:46.216421" level="INFO">${prod_group} = //div[@class='k-animation-container']//span[contains(text(), 'check tracking rabbitmq')]</msg>
+<var>${prod_group}</var>
+<status status="PASS" start="2025-04-06T16:19:46.212436" elapsed="0.003985"/>
+</kw>
+<kw name="prod_image locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:46.219425" level="INFO">${prod_image} = (//ul[@class='uploadImageButton']//label)[1]</msg>
+<var>${prod_image}</var>
+<arg>(//ul[@class='uploadImageButton']//label)[1]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-06T16:19:46.218423" elapsed="0.001994"/>
+</kw>
+<return>
+<value>${prod_image}</value>
+<status status="PASS" start="2025-04-06T16:19:46.220417" elapsed="0.001005"/>
+</return>
+<msg time="2025-04-06T16:19:46.222422" level="INFO">${prod_image} = (//ul[@class='uploadImageButton']//label)[1]</msg>
+<var>${prod_image}</var>
+<status status="PASS" start="2025-04-06T16:19:46.217419" elapsed="0.005003"/>
+</kw>
+<kw name="btn_save locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:46.225950" level="INFO">${btn_save} = //a[@ng-enter='SaveProduct()']</msg>
+<var>${btn_save}</var>
+<arg>//a[@ng-enter='SaveProduct()']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-06T16:19:46.224946" elapsed="0.001004"/>
+</kw>
+<return>
+<value>${btn_save}</value>
+<status status="PASS" start="2025-04-06T16:19:46.225950" elapsed="0.001000"/>
+</return>
+<msg time="2025-04-06T16:19:46.227946" level="INFO">${save} = //a[@ng-enter='SaveProduct()']</msg>
+<var>${save}</var>
+<status status="PASS" start="2025-04-06T16:19:46.223418" elapsed="0.004528"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${prod_code}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-06T16:19:46.228947" elapsed="0.076530"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-06T16:19:46.306008" level="INFO">Typing text 'code3' into text field '//input[@ng-model='product.Code']'.</msg>
+<arg>${prod_code}</arg>
+<arg>${code}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-06T16:19:46.306008" elapsed="0.281835"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-06T16:19:46.589868" level="INFO">Typing text 'Checktracking02' into text field '//input[@ng-model='product.Name']'.</msg>
+<arg>${prod_name}</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-06T16:19:46.588869" elapsed="0.577136"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-06T16:19:47.168006" level="INFO">Typing text '10000' into text field '//input[@ng-model='product.Cost']'.</msg>
+<arg>${prod_cost}</arg>
+<arg>${cost}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-06T16:19:47.166005" elapsed="0.543523"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-06T16:19:47.710547" level="INFO">Typing text '20000' into text field '//input[@ng-model='product.BasePrice']'.</msg>
+<arg>${prod_baseprice}</arg>
+<arg>${base}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-06T16:19:47.710547" elapsed="0.437520"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-06T16:19:48.149697" level="INFO">Typing text '0.1' into text field '//input[@ng-model='product.Weight']'.</msg>
+<arg>${prod_weight}</arg>
+<arg>${weight}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-06T16:19:48.148067" elapsed="0.346006"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-06T16:19:48.496077" level="INFO">Typing text '100' into text field '//input[@ng-model='product.OnHand']'.</msg>
+<arg>${prod_onhand}</arg>
+<arg>${onhand}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-06T16:19:48.495079" elapsed="0.368009"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-06T16:19:48.864090" level="INFO">Clicking element '//kv-category-dropdownlist[@selected-id='product.CategoryId']//span[@class='k-select']//span[@class='k-icon k-i-arrow-s']'.</msg>
+<arg>${form_arrow}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-06T16:19:48.864090" elapsed="0.798202"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-06T16:19:54.667014" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-06T16:19:49.663303" elapsed="5.003711"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-06T16:19:54.670442" level="INFO">Typing text 'check' into text field '//div[@class='k-animation-container']//span[@class='k-icon k-i-search']//ancestor::span[@class='k-list-filter']//input[@role='listbox']'.</msg>
+<arg>${search_prod_group}</arg>
+<arg>${searchgroup}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-06T16:19:54.668418" elapsed="0.226796"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-06T16:19:54.896214" level="INFO">Clicking element '//div[@class='k-animation-container']//span[contains(text(), 'check tracking rabbitmq')]'.</msg>
+<arg>${prod_group}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-06T16:19:54.895214" elapsed="0.460331"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2025-04-06T16:19:55.358073" level="INFO">Sending E:\Download\Ảnh\King_of_OOO.jpg to browser.</msg>
+<arg>${prod_image}</arg>
+<arg>E:\\Download\\Ảnh\\King_of_OOO.jpg</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2025-04-06T16:19:55.357051" elapsed="0.720418"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-06T16:19:56.081767" level="INFO">Clicking element '//a[@ng-enter='SaveProduct()']'.</msg>
+<arg>${save}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-06T16:19:56.079778" elapsed="0.345359"/>
+</kw>
+<arg>code3</arg>
+<arg>Checktracking02</arg>
+<arg>10000</arg>
+<arg>20000</arg>
+<arg>0.1</arg>
+<arg>100</arg>
+<arg>check</arg>
+<status status="PASS" start="2025-04-06T16:19:46.171752" elapsed="10.255381"/>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="search_product" owner="api">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-06T16:19:56.434909" level="INFO">${header} = {'content-type': 'application/json', 'retailer': 'newfnb01', 'branchid': '10240247', 'x-group-id': '33', 'x-retailer-id': '742710', 'authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IndYYS...</msg>
+<var>${header}</var>
+<arg>content-type=application/json</arg>
+<arg>retailer=newfnb01</arg>
+<arg>branchid=10240247</arg>
+<arg>x-group-id=33</arg>
+<arg>x-retailer-id=742710</arg>
+<arg>authorization=${TOKEN}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-06T16:19:56.432123" elapsed="0.003811"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2025-04-06T16:19:56.815875" level="INFO">GET Request : url=https://fnb.kiotviet.vn/api/branchs/10240247/masterproducts?Keyword=Checktracking02 
+ path_url=/api/branchs/10240247/masterproducts?Keyword=Checktracking02 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'retailer': 'newfnb01', 'Cookie': 'ss-id=4KtRgDYYieV46xp9tFsn; ss-pid=80PI6zcGSmoe233BBvX2; ss-opt=temp; l_742710_68591=vi-VN; Retailer=newfnb01; newfnb=1; LatestBranch_742710_68591=29427; ss-tok=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IndYYSJ9.eyJpc3MiOiJrdnNzand0Iiwic3ViIjo2ODU5MSwiaWF0IjoxNzQzOTMxMTY3LCJleHAiOjE3NDYzNTAzNjcsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluIiwicm9sZXMiOlsiVXNlciJdLCJrdnNvdXJjZSI6ImZuYiIsImt2c2VzIjoiYzY2YmNlOWI0ZjI1NDZhNWE5NDlhMDc2NmMzNjk3YWYiLCJrdnVpZCI6Njg1OTEsImt2dWd2bmFtZSI6ODQxMjM0NTY3ODksImt2bGFuZyI6InZpLVZOIiwia3Z1dHlwZSI6MCwia3Z1bGltaXQiOiJGYWxzZSIsImt2dWFkbWluIjoiVHJ1ZSIsImt2dWFjdCI6IlRydWUiLCJrdnVsaW1pdHRyYW5zIjoiRmFsc2UiLCJrdnVzaG93c3VtIjoiVHJ1ZSIsImt2YmlkIjoyOTQyNywia3ZyaW5kaWQiOjE1LCJrdnJjb2RlIjoibmV3Zm5iMDEiLCJrdnJpZCI6NzQyNzEwLCJrdnVyaWQiOjc0MjcxMCwia3ZyZ2lkIjozMywiYXBwYnJhbmRpbmdpZCI6MCwicGVybXMiOiIifQ.vQ-Q3mq1taBJjERyckFo_Y_dcgZdyO1F2m2V9cMxU4yDQQjaQhBEg0vHEymMvvSgzMnRpzinMFoHpko0jmOcmUl-rpi4ol2ibLspwzDARnZW__jFRvQkzx-0zucRMlIZJquuK5-u7L-YShzy1mrDrt_XaKflcfcCKwakSXzDSrsr_fJhhDfM1CDmSeUF_ImMWF1VBXG4yWblCfGjAzqYMTdaAiP0nZc90YKV1t6rN7RW-aRBXD5x8PonuKPqDg5L2LaWt7QUhPvEIts_7wa2PWZKDj7ECnX1U57n3UjbM7bzL17ND6yCjh2V0j5EB8BgEHjlLbfaVAazZbASyKpc1Q'} 
+ body=None 
+ </msg>
+<msg time="2025-04-06T16:19:56.816904" level="INFO">GET Response : url=https://fnb.kiotviet.vn/api/branchs/10240247/masterproducts?Keyword=Checktracking02 
+ status=200, reason=OK 
+ headers={'content-type': 'application/json; charset=utf-8', 'cache-control': 'private', 'vary': 'Accept,Accept-Encoding', 'fnb-pos-version': '1.0.1-f', 'x-powered-by': 'ServiceStack/5,40 Net45/Windows', 'access-control-allow-methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS, GET, POST, PUT, DELETE, OPTIONS', 'access-control-allow-headers': 'Content-Type, Origin, X-Requested-With, Content-Type, Accept, Authorization, Retailer, BranchId, Real-Time-Token, fnb-pos-version, kv-version, X-GROUP-ID, X-RETAILER-CODE, x-retailer-code, x-retailer-id, X-XSRF-Token, app, X-Group-Id, X-Branch-Id, X-Device-Id, X-Fingerprint-Key, X-App-Name, X-App-Version, X-System-Info', 'access-control-allow-origin': '*', 'access-control-expose-headers': 'FnB-POS-Version', 'x-frame-options': 'sameorigin', 'date': 'Sun, 06 Apr 2025 09:19:55 GMT', 'server': 'kiotviet', 'transfer-encoding': 'chunked', 'content-encoding': 'gzip'} 
+ body={"TotalOnHand":0,"TotalOrder":0,"TotalProduct":1,"MaxPosition":0,"Total":1,"Data":[{"GroupProductType":0,"UnitListStr":"","MasterCode":"SPC001005","VariantCount":0,"IsSaleBranch":true,"Id":15032598,"ProductGroup":1,"ProductType":2,"CategoryId":10506438,"CategoryName":"check tracking rabbitmq","CategoryNameTree":"check tracking rabbitmq","isActive":true,"HasVariants":false,"AllowsSale":true,"isDeleted":false,"Name":"Checktracking02","FullName":"Checktracking02","Code":"code3","BasePrice":20000.0000,"Cost":0.0000,"LatestPurchasePrice":0.0000,"OnHand":0,"OnHandCompareMin":0,"OnHandCompareMax":0,"CompareOnHand":0,"CompareCost":0,"CompareBasePrice":0,"CompareProductGroup":0,"Weight":0.1,"Reserved":0,"MinQuantity":0,"MaxQuantity":0,"CustomId":0,"CustomValue":0,"Unit":"","ConversionValue":1,"OrderTemplate":"","IsLotSerialControl":false,"IsRewardPoint":true,"HaveProcessedGoodsChild":false,"AllowSaleForBranch":true,"InventoryTrackingIgnore":false}],"Filter":{"__type":"KiotViet.Web.Api.BranchMasterProductList, KiotViet.Web.Api","Id":10240247,"ForSummaryRow":false,"FullInformation":false,"CategoryId":0,"KeyWord":"Checktracking02","IsExport":false,"FilterTaxId":0},"Timestamp":"2025-04-06T16:19:56.734+07:00"} 
+ </msg>
+<msg time="2025-04-06T16:19:56.817876" level="INFO">${respone} = &lt;Response [200]&gt;</msg>
+<var>${respone}</var>
+<arg>url=/api/branchs/10240247/masterproducts</arg>
+<arg>alias=login</arg>
+<arg>params=Keyword=Checktracking02</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-04-06T16:19:56.435934" elapsed="0.381942"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${respone}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-06T16:19:56.818876" elapsed="0.001007"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:56.823928" level="INFO">${rsp} = {'TotalOnHand': 0, 'TotalOrder': 0, 'TotalProduct': 1, 'MaxPosition': 0, 'Total': 1, 'Data': [{'GroupProductType': 0, 'UnitListStr': '', 'MasterCode': 'SPC001005', 'VariantCount': 0, 'IsSaleBranch': T...</msg>
+<var>${rsp}</var>
+<arg>${respone.json()}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-06T16:19:56.820935" elapsed="0.002993"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:56.825926" level="INFO">${prodjpath} = $.Data[0].Id</msg>
+<var>${prodjpath}</var>
+<arg>$.Data[0].Id</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-06T16:19:56.824930" elapsed="0.000996"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2025-04-06T16:19:56.896060" level="INFO">${prodid} = [15032598]</msg>
+<var>${prodid}</var>
+<arg>${rsp}</arg>
+<arg>${prodjpath}</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2025-04-06T16:19:56.826869" elapsed="0.069191"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${prodid[0]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-06T16:19:56.897060" elapsed="0.002430"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-06T16:19:56.905510" level="INFO">${Produdt_id} = 15032598</msg>
+<arg>${Produdt_id}</arg>
+<arg>${prodid[0]}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-06T16:19:56.900512" elapsed="0.004998"/>
+</kw>
+<status status="PASS" start="2025-04-06T16:19:56.431116" elapsed="0.474394"/>
+</kw>
+<kw name="delete_product" owner="api">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-06T16:19:56.909051" level="INFO">${header} = {'content-type': 'application/json', 'retailer': 'newfnb01', 'branchid': '10240247', 'x-group-id': '33', 'x-retailer-id': '742710', 'authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IndYYS...</msg>
+<var>${header}</var>
+<arg>content-type=application/json</arg>
+<arg>retailer=newfnb01</arg>
+<arg>branchid=10240247</arg>
+<arg>x-group-id=33</arg>
+<arg>x-retailer-id=742710</arg>
+<arg>authorization=${TOKEN}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-06T16:19:56.907029" elapsed="0.002022"/>
+</kw>
+<kw name="DELETE On Session" owner="RequestsLibrary">
+<msg time="2025-04-06T16:19:57.054641" level="INFO">DELETE Request : url=https://fnb.kiotviet.vn/api/products/15032598 
+ path_url=/api/products/15032598 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'retailer': 'newfnb01', 'Cookie': 'ss-id=4KtRgDYYieV46xp9tFsn; ss-pid=80PI6zcGSmoe233BBvX2; ss-opt=temp; l_742710_68591=vi-VN; Retailer=newfnb01; newfnb=1; LatestBranch_742710_68591=29427; ss-tok=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IndYYSJ9.eyJpc3MiOiJrdnNzand0Iiwic3ViIjo2ODU5MSwiaWF0IjoxNzQzOTMxMTY3LCJleHAiOjE3NDYzNTAzNjcsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluIiwicm9sZXMiOlsiVXNlciJdLCJrdnNvdXJjZSI6ImZuYiIsImt2c2VzIjoiYzY2YmNlOWI0ZjI1NDZhNWE5NDlhMDc2NmMzNjk3YWYiLCJrdnVpZCI6Njg1OTEsImt2dWd2bmFtZSI6ODQxMjM0NTY3ODksImt2bGFuZyI6InZpLVZOIiwia3Z1dHlwZSI6MCwia3Z1bGltaXQiOiJGYWxzZSIsImt2dWFkbWluIjoiVHJ1ZSIsImt2dWFjdCI6IlRydWUiLCJrdnVsaW1pdHRyYW5zIjoiRmFsc2UiLCJrdnVzaG93c3VtIjoiVHJ1ZSIsImt2YmlkIjoyOTQyNywia3ZyaW5kaWQiOjE1LCJrdnJjb2RlIjoibmV3Zm5iMDEiLCJrdnJpZCI6NzQyNzEwLCJrdnVyaWQiOjc0MjcxMCwia3ZyZ2lkIjozMywiYXBwYnJhbmRpbmdpZCI6MCwicGVybXMiOiIifQ.vQ-Q3mq1taBJjERyckFo_Y_dcgZdyO1F2m2V9cMxU4yDQQjaQhBEg0vHEymMvvSgzMnRpzinMFoHpko0jmOcmUl-rpi4ol2ibLspwzDARnZW__jFRvQkzx-0zucRMlIZJquuK5-u7L-YShzy1mrDrt_XaKflcfcCKwakSXzDSrsr_fJhhDfM1CDmSeUF_ImMWF1VBXG4yWblCfGjAzqYMTdaAiP0nZc90YKV1t6rN7RW-aRBXD5x8PonuKPqDg5L2LaWt7QUhPvEIts_7wa2PWZKDj7ECnX1U57n3UjbM7bzL17ND6yCjh2V0j5EB8BgEHjlLbfaVAazZbASyKpc1Q', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg time="2025-04-06T16:19:57.054641" level="INFO">DELETE Response : url=https://fnb.kiotviet.vn/api/products/15032598 
+ status=200, reason=OK 
+ headers={'content-type': 'application/json; charset=utf-8', 'cache-control': 'private', 'vary': 'Accept,Accept-Encoding', 'fnb-pos-version': '1.0.1-f', 'x-powered-by': 'ServiceStack/5,40 Net45/Windows', 'access-control-allow-methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS, GET, POST, PUT, DELETE, OPTIONS', 'access-control-allow-headers': 'Content-Type, Origin, X-Requested-With, Content-Type, Accept, Authorization, Retailer, BranchId, Real-Time-Token, fnb-pos-version, kv-version, X-GROUP-ID, X-RETAILER-CODE, x-retailer-code, x-retailer-id, X-XSRF-Token, app, X-Group-Id, X-Branch-Id, X-Device-Id, X-Fingerprint-Key, X-App-Name, X-App-Version, X-System-Info', 'access-control-allow-origin': '*', 'access-control-expose-headers': 'FnB-POS-Version', 'x-frame-options': 'sameorigin', 'date': 'Sun, 06 Apr 2025 09:19:56 GMT', 'server': 'kiotviet', 'transfer-encoding': 'chunked', 'content-encoding': 'gzip'} 
+ body={"Message":"Xóa dữ liệu thành công"} 
+ </msg>
+<msg time="2025-04-06T16:19:57.055623" level="INFO">${del} = &lt;Response [200]&gt;</msg>
+<var>${del}</var>
+<arg>url=/api/products/${Produdt_id}</arg>
+<arg>alias=login</arg>
+<doc>Sends a DELETE request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-04-06T16:19:56.909051" elapsed="0.146572"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${del}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2025-04-06T16:19:57.055623" elapsed="0.001518"/>
+</kw>
+<status status="PASS" start="2025-04-06T16:19:56.905510" elapsed="0.151631"/>
+</kw>
+<arg>search_product</arg>
+<arg>delete_product</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-04-06T16:19:56.429134" elapsed="0.629034"/>
+</kw>
+<status status="PASS" start="2025-04-06T16:19:22.398172" elapsed="34.659996"/>
+</test>
+<status status="PASS" start="2025-04-06T16:19:21.213730" elapsed="35.845449"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Newtesy1" id="s1" pass="1" fail="0" skip="0">Newtesy1</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-04-06T16:19:22.030370" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.031330" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.031330" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 26: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.032368" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 30: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.033370" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 34: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.034328" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 37: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.034328" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 40: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.034328" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 43: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.034328" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 47: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.034328" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 51: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.035327" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 54: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.035327" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 57: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.035327" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 60: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.035327" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 63: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.035327" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 66: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.035327" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 69: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.036327" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 73: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.036327" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 77: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.036327" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 81: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.036327" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 84: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.036327" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 87: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.036327" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 90: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.037327" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 93: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.037327" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 96: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.037327" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 99: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.037327" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 102: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.037327" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 105: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.037327" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 108: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-06T16:19:22.402441" level="WARN">exexcutable_path is being deprecated. Please use service to configure the driver's executable_path as per documentation.</msg>
+</errors>
+</robot>

@@ -1,0 +1,1576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.2 on win32)" generated="2025-04-23T23:18:14.955118" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcase" source="C:\Users\gingi\Auto\suite\testcase.robot">
+<test id="s1-t1" name="Tcs1" line="10">
+<kw name="login1" owner="action">
+<kw name="Retailer locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:15.475433" level="INFO">${retailer} = //*[@id="Retailer"]</msg>
+<var>${retailer}</var>
+<arg>//*[@id="Retailer"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:15.475433" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${retailer}</value>
+<status status="PASS" start="2025-04-23T23:18:15.475433" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:15.475433" level="INFO">${retail} = //*[@id="Retailer"]</msg>
+<var>${retail}</var>
+<status status="PASS" start="2025-04-23T23:18:15.474436" elapsed="0.000997"/>
+</kw>
+<kw name="username locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:15.476428" level="INFO">${username} = //*[@id="UserName"]</msg>
+<var>${username}</var>
+<arg>//*[@id="UserName"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:15.476428" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${username}</value>
+<status status="PASS" start="2025-04-23T23:18:15.476428" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:15.476428" level="INFO">${user} = //*[@id="UserName"]</msg>
+<var>${user}</var>
+<status status="PASS" start="2025-04-23T23:18:15.475433" elapsed="0.000995"/>
+</kw>
+<kw name="pw locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:15.477429" level="INFO">${pw} = //*[@id="Password"]</msg>
+<var>${pw}</var>
+<arg>//*[@id="Password"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:15.477429" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${pw}</value>
+<status status="PASS" start="2025-04-23T23:18:15.477429" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:15.477429" level="INFO">${pw} = //*[@id="Password"]</msg>
+<var>${pw}</var>
+<status status="PASS" start="2025-04-23T23:18:15.476428" elapsed="0.001001"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:15.478423" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-04-23T23:18:15.478423" level="FAIL">No browser is open.</msg>
+<arg>${retail}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-04-23T23:18:15.477429" elapsed="0.002958">No browser is open.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${retail}</arg>
+<arg>${retailer}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:18:15.480387" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${user}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:18:15.480387" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${pw}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:18:15.480387" elapsed="0.001028"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${ql}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:18:15.481415" elapsed="0.000000"/>
+</kw>
+<arg>newfnb01</arg>
+<arg>admin</arg>
+<arg>4321</arg>
+<status status="FAIL" start="2025-04-23T23:18:15.473409" elapsed="0.008006">No browser is open.</status>
+</kw>
+<kw name="Teardown" owner="action" type="TEARDOWN">
+<kw name="Retailer locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:15.482420" level="INFO">${retailer} = //*[@id="Retailer"]</msg>
+<var>${retailer}</var>
+<arg>//*[@id="Retailer"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:15.482420" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${retailer}</value>
+<status status="PASS" start="2025-04-23T23:18:15.482420" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:15.482420" level="INFO">${retailer} = //*[@id="Retailer"]</msg>
+<var>${retailer}</var>
+<status status="PASS" start="2025-04-23T23:18:15.482420" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:15.483408" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-04-23T23:18:15.483408" level="FAIL">No browser is open.</msg>
+<arg>${pop}</arg>
+<arg>10s</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-04-23T23:18:15.483408" elapsed="0.000998">No browser is open.</status>
+</kw>
+<msg time="2025-04-23T23:18:15.484406" level="INFO">${popup} = False</msg>
+<var>${popup}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${pop}</arg>
+<arg>10s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-04-23T23:18:15.482420" elapsed="0.001986"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${popup}'=='True'</arg>
+<arg>Press Keys</arg>
+<arg>//body</arg>
+<arg>ESCAPE</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-04-23T23:18:15.485408" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:15.485408" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-04-23T23:18:15.485408" level="FAIL">No browser is open.</msg>
+<arg>${user}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-04-23T23:18:15.485408" elapsed="0.000994">No browser is open.</status>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:15.486402" level="INFO">Simulating Mouse Over on element '//a[@class='dpib userName']'.</msg>
+<msg time="2025-04-23T23:18:15.486402" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-04-23T23:18:15.486402" level="FAIL">No browser is open.</msg>
+<arg>${user}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="FAIL" start="2025-04-23T23:18:15.486402" elapsed="0.000998">No browser is open.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:15.488315" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-04-23T23:18:15.488315" level="FAIL">No browser is open.</msg>
+<arg>${out}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-04-23T23:18:15.488315" elapsed="0.001462">No browser is open.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:15.490226" level="INFO">Clicking element '//ul[@ng-show='showUserMenu']//i[@class='far fa-sign-out fa-fw']'.</msg>
+<msg time="2025-04-23T23:18:15.490226" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-04-23T23:18:15.490226" level="FAIL">No browser is open.</msg>
+<arg>${out}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-04-23T23:18:15.489872" elapsed="0.000822">No browser is open.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:15.491763" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-04-23T23:18:15.491763" level="FAIL">No browser is open.</msg>
+<arg>${retailer}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-04-23T23:18:15.491763" elapsed="0.000992">No browser is open.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-23T23:18:15.493723" elapsed="0.000191"/>
+</kw>
+<doc>Logout</doc>
+<status status="FAIL" start="2025-04-23T23:18:15.481415" elapsed="0.012499">Several failures occurred:
+
+1) No browser is open.
+
+2) No browser is open.
+
+3) No browser is open.
+
+4) No browser is open.
+
+5) No browser is open.</status>
+</kw>
+<status status="FAIL" start="2025-04-23T23:18:15.472411" elapsed="0.021503">No browser is open.
+
+Also teardown failed:
+Several failures occurred:
+
+1) No browser is open.
+
+2) No browser is open.
+
+3) No browser is open.
+
+4) No browser is open.
+
+5) No browser is open.</status>
+</test>
+<test id="s1-t2" name="Tcs2" line="15">
+<kw name="Open browser url" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:15.495881" level="INFO">Opening browser 'chrome' to base url 'https://fnb.kiotviet.vn/'.</msg>
+<arg>${url_goto}</arg>
+<arg>chrome</arg>
+<arg>browser1</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-23T23:18:15.495881" elapsed="2.312018"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-23T23:18:17.807899" elapsed="0.027847"/>
+</kw>
+<kw name="login1" owner="action">
+<kw name="Retailer locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:17.844361" level="INFO">${retailer} = //*[@id="Retailer"]</msg>
+<var>${retailer}</var>
+<arg>//*[@id="Retailer"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:17.844212" elapsed="0.000149"/>
+</kw>
+<return>
+<value>${retailer}</value>
+<status status="PASS" start="2025-04-23T23:18:17.844361" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:17.845361" level="INFO">${retail} = //*[@id="Retailer"]</msg>
+<var>${retail}</var>
+<status status="PASS" start="2025-04-23T23:18:17.843326" elapsed="0.002035"/>
+</kw>
+<kw name="username locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:17.846359" level="INFO">${username} = //*[@id="UserName"]</msg>
+<var>${username}</var>
+<arg>//*[@id="UserName"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:17.846359" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${username}</value>
+<status status="PASS" start="2025-04-23T23:18:17.847357" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:17.847357" level="INFO">${user} = //*[@id="UserName"]</msg>
+<var>${user}</var>
+<status status="PASS" start="2025-04-23T23:18:17.845361" elapsed="0.001996"/>
+</kw>
+<kw name="pw locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:17.849353" level="INFO">${pw} = //*[@id="Password"]</msg>
+<var>${pw}</var>
+<arg>//*[@id="Password"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:17.848355" elapsed="0.000998"/>
+</kw>
+<return>
+<value>${pw}</value>
+<status status="PASS" start="2025-04-23T23:18:17.850355" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:17.851355" level="INFO">${pw} = //*[@id="Password"]</msg>
+<var>${pw}</var>
+<status status="PASS" start="2025-04-23T23:18:17.847357" elapsed="0.003998"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${retail}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-23T23:18:17.853356" elapsed="0.122244"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:17.975600" level="INFO">Typing text 'newfnb01' into text field '//*[@id="Retailer"]'.</msg>
+<arg>${retail}</arg>
+<arg>${retailer}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T23:18:17.975600" elapsed="0.101031"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:18.078199" level="INFO">Typing text 'admin' into text field '//*[@id="UserName"]'.</msg>
+<arg>${user}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T23:18:18.077265" elapsed="0.083780"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:18.161045" level="INFO">Typing text '4321' into text field '//*[@id="Password"]'.</msg>
+<arg>${pw}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T23:18:18.161045" elapsed="0.082573"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:18.258385" level="INFO">Clicking element '//*[@id="btn-login"]'.</msg>
+<arg>${ql}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T23:18:18.258385" elapsed="0.069388"/>
+</kw>
+<arg>newfnb01</arg>
+<arg>admin</arg>
+<arg>4321</arg>
+<status status="PASS" start="2025-04-23T23:18:17.841327" elapsed="0.486446"/>
+</kw>
+<kw name="loginapi" owner="api">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-23T23:18:18.327773" level="INFO">${body} = {'provider': 'credentials', 'UserName': 'admin', 'Password': '4321'}</msg>
+<var>${body}</var>
+<arg>provider=credentials</arg>
+<arg>UserName=admin</arg>
+<arg>Password=4321</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-23T23:18:18.327773" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-04-23T23:18:18.327773" level="INFO">${json_string} = {"provider": "credentials", "UserName": "admin", "Password": "4321"}</msg>
+<var>${json_string}</var>
+<arg>json.dumps(${body})</arg>
+<arg>json</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-04-23T23:18:18.327773" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-23T23:18:18.327773" level="INFO">${header} = {'content-type': 'application/json', 'retailer': 'newfnb01'}</msg>
+<var>${header}</var>
+<arg>content-type=application/json</arg>
+<arg>retailer=newfnb01</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-23T23:18:18.327773" elapsed="0.000000"/>
+</kw>
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-04-23T23:18:18.327773" level="INFO">Creating Session using : alias=login, url=https://fnb.kiotviet.vn, headers={'content-type': 'application/json', 'retailer': 'newfnb01'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<arg>login</arg>
+<arg>https://fnb.kiotviet.vn</arg>
+<arg>headers=${header}</arg>
+<arg>verify=${True}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-04-23T23:18:18.327773" elapsed="0.000000"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2025-04-23T23:18:18.480767" level="INFO">POST Request : url=https://fnb.kiotviet.vn/api/users/auth-login 
+ path_url=/api/users/auth-login 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'retailer': 'newfnb01', 'Content-Length': '68'} 
+ body={"provider": "credentials", "UserName": "admin", "Password": "4321"} 
+ </msg>
+<msg time="2025-04-23T23:18:18.480767" level="INFO">POST Response : url=https://fnb.kiotviet.vn/api/users/auth-login 
+ status=200, reason=OK 
+ headers={'content-type': 'application/json; charset=utf-8', 'cache-control': 'private', 'vary': 'Accept,Accept-Encoding', 'fnb-pos-version': '1.0.1-f', 'x-powered-by': 'ServiceStack/5,40 Net45/Windows', 'access-control-allow-methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS, GET, POST, PUT, DELETE, OPTIONS', 'access-control-allow-headers': 'Content-Type, Origin, X-Requested-With, Content-Type, Accept, Authorization, Retailer, BranchId, Real-Time-Token, fnb-pos-version, kv-version, X-GROUP-ID, X-RETAILER-CODE, x-retailer-code, x-retailer-id, X-XSRF-Token, app, X-Group-Id, X-Branch-Id, X-Device-Id, X-Fingerprint-Key, X-App-Name, X-App-Version, X-System-Info', 'set-cookie': 'ss-id=E9MhKazyLMP1bXJlcqGf; path=/; HttpOnly, ss-pid=AFMWluWiPYJ7VUKcG3Wr; expires=Sun, 23-Apr-2045 16:18:16 GMT; path=/; HttpOnly, ss-opt=temp; expires=Sun, 23-Apr-2045 16:18:16 GMT; path=/; HttpOnly, l_742710_68591=vi-VN; expires=Sun, 23-Apr-2045 16:18:16 GMT; path=/; HttpOnly, Retailer=newfnb01; expires=Sun, 23-Apr-2045 16:18:16 GMT; path=/; HttpOnly, newfnb=1; expires=Sun, 23-Apr-2045 16:18:16 GMT; path=/; HttpOnly, LatestBranch_742710_68591=29427; expires=Sun, 23-Apr-2045 16:18:16 GMT; path=/; HttpOnly, ss-tok=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IndYYSJ9.eyJpc3MiOiJrdnNzand0Iiwic3ViIjo2ODU5MSwiaWF0IjoxNzQ1NDI1MDk2LCJleHAiOjE3NDc4NDQyOTYsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluIiwicm9sZXMiOlsiVXNlciJdLCJrdnNvdXJjZSI6ImZuYiIsImt2c2VzIjoiODU4ZDM3MjgzM2U3NDQ5ZGEyNGExNTQzY2IxODZmNWEiLCJrdnVpZCI6Njg1OTEsImt2dWd2bmFtZSI6ODQxMjM0NTY3ODksImt2bGFuZyI6InZpLVZOIiwia3Z1dHlwZSI6MCwia3Z1bGltaXQiOiJGYWxzZSIsImt2dWFkbWluIjoiVHJ1ZSIsImt2dWFjdCI6IlRydWUiLCJrdnVsaW1pdHRyYW5zIjoiRmFsc2UiLCJrdnVzaG93c3VtIjoiVHJ1ZSIsImt2YmlkIjoyOTQyNywia3ZyaW5kaWQiOjE1LCJrdnJjb2RlIjoibmV3Zm5iMDEiLCJrdnJpZCI6NzQyNzEwLCJrdnVyaWQiOjc0MjcxMCwia3ZyZ2lkIjozMywiYXBwYnJhbmRpbmdpZCI6MCwicGVybXMiOiIifQ.QuWjoYW0D7OeZJKWD24NhwKRgQd2hbUOUaG1cM0Cq2OVJD_Uut6ajNliSUWyO4YcjAzYmBHNL3f3kt21ZYaTYnLUCwlSjviqleLhEbKcHB9If0gpMxu1tKhWYGi7lWlDnT_h3A6ZV4AK-srE3_DAMdhIen_oCcz1F80FuXCrIFqnHZf28_cTPlGfQfY0QNqM3pEpoWrWJySgvL_oJwcA36KGO9uDA4s0uz4cLRZJuVxnYe9noYF31Y6seMzIXVoRV9nwpsEcFmzivvaL4K1EuvH390e2Q1H1KI9njK-MwMlnsEfGS2OUCjqf3ZziV7WPs8DdNkGiEW7x67xgeciviA; expires=Wed, 21-May-2025 16:18:16 GMT; path=/; HttpOnly', 'access-control-allow-origin': '*', 'access-control-expose-headers': 'FnB-POS-Version', 'x-frame-options': 'sameorigin', 'date': 'Wed, 23 Apr 2025 16:18:16 GMT', 'server': 'kiotviet', 'transfer-encoding': 'chunked', 'content-encoding': 'gzip'} 
+ body={"UserId":68591,"UserName":"admin","SessionId":"E9MhKazyLMP1bXJlcqGf","BearerToken":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IndYYSJ9.eyJpc3MiOiJrdnNzand0Iiwic3ViIjo2ODU5MSwiaWF0IjoxNzQ1NDI1MDk2LCJleHAiOjE3NDc4NDQyOTYsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluIiwicm9sZXMiOlsiVXNlciJdLCJrdnNvdXJjZSI6ImZuYiIsImt2c2VzIjoiODU4ZDM3MjgzM2U3NDQ5ZGEyNGExNTQzY2IxODZmNWEiLCJrdnVpZCI6Njg1OTEsImt2dWd2bmFtZSI6ODQxMjM0NTY3ODksImt2bGFuZyI6InZpLVZOIiwia3Z1dHlwZSI6MCwia3Z1bGltaXQiOiJGYWxzZSIsImt2dWFkbWluIjoiVHJ1ZSIsImt2dWFjdCI6IlRydWUiLCJrdnVsaW1pdHRyYW5zIjoiRmFsc2UiLCJrdnVzaG93c3VtIjoiVHJ1ZSIsImt2YmlkIjoyOTQyNywia3ZyaW5kaWQiOjE1LCJrdnJjb2RlIjoibmV3Zm5iMDEiLCJrdnJpZCI6NzQyNzEwLCJrdnVyaWQiOjc0MjcxMCwia3ZyZ2lkIjozMywiYXBwYnJhbmRpbmdpZCI6MCwicGVybXMiOiIifQ.QuWjoYW0D7OeZJKWD24NhwKRgQd2hbUOUaG1cM0Cq2OVJD_Uut6ajNliSUWyO4YcjAzYmBHNL3f3kt21ZYaTYnLUCwlSjviqleLhEbKcHB9If0gpMxu1tKhWYGi7lWlDnT_h3A6ZV4AK-srE3_DAMdhIen_oCcz1F80FuXCrIFqnHZf28_cTPlGfQfY0QNqM3pEpoWrWJySgvL_oJwcA36KGO9uDA4s0uz4cLRZJuVxnYe9noYF31Y6seMzIXVoRV9nwpsEcFmzivvaL4K1EuvH390e2Q1H1KI9njK-MwMlnsEfGS2OUCjqf3ZziV7WPs8DdNkGiEW7x67xgeciviA","BranchId":29427,"IsUsingNewFnb":true,"IsNewLogin":true} 
+ </msg>
+<msg time="2025-04-23T23:18:18.481763" level="INFO">${respone} = &lt;Response [200]&gt;</msg>
+<var>${respone}</var>
+<arg>url=/api/users/auth-login</arg>
+<arg>alias=login</arg>
+<arg>data=${json_string}</arg>
+<arg>verify=${True}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-04-23T23:18:18.327773" elapsed="0.153990"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-23T23:18:18.483278" level="INFO">200</msg>
+<arg>${respone.status_code}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-23T23:18:18.481763" elapsed="0.001515"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:18.483278" level="INFO">${rsp} = {'UserId': 68591, 'UserName': 'admin', 'SessionId': 'E9MhKazyLMP1bXJlcqGf', 'BearerToken': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IndYYSJ9.eyJpc3MiOiJrdnNzand0Iiwic3ViIjo2ODU5MSwiaWF0IjoxNzQ1NDI...</msg>
+<var>${rsp}</var>
+<arg>${respone.json()}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:18.483278" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:18.483278" level="INFO">${jpath} = $.BearerToken</msg>
+<var>${jpath}</var>
+<arg>$.BearerToken</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:18.483278" elapsed="0.000000"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2025-04-23T23:18:18.509541" level="INFO">${val} = ['eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IndYYSJ9.eyJpc3MiOiJrdnNzand0Iiwic3ViIjo2ODU5MSwiaWF0IjoxNzQ1NDI1MDk2LCJleHAiOjE3NDc4NDQyOTYsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluIiwicm9sZXMiOlsiVXNlciJdL...</msg>
+<var>${val}</var>
+<arg>${rsp}</arg>
+<arg>${jpath}</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2025-04-23T23:18:18.483278" elapsed="0.026263"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${val[0]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-23T23:18:18.509541" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:18.509541" level="INFO">${TOKEN} = eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IndYYSJ9.eyJpc3MiOiJrdnNzand0Iiwic3ViIjo2ODU5MSwiaWF0IjoxNzQ1NDI1MDk2LCJleHAiOjE3NDc4NDQyOTYsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluIiwicm9sZXMiOlsiVXNlciJdLCJ...</msg>
+<arg>${TOKEN}</arg>
+<arg>${val[0]}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-23T23:18:18.509541" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-04-23T23:18:18.327773" elapsed="0.181768"/>
+</kw>
+<status status="PASS" start="2025-04-23T23:18:15.495881" elapsed="3.013660"/>
+</kw>
+<kw name="hover_product" owner="action">
+<kw name="producthover locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:18.509541" level="INFO">${product} = //section[@class='container']//ul[@class='menu']//li[@class='ng-scope has-child']//i[@class='fas fas fa-cube']/ancestor::a</msg>
+<var>${product}</var>
+<arg>//section[@class='container']//ul[@class='menu']//li[@class='ng-scope has-child']//i[@class='fas fas fa-cube']/ancestor::a</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:18.509541" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${product}</value>
+<status status="PASS" start="2025-04-23T23:18:18.509541" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:18.509541" level="INFO">${prodhover} = //section[@class='container']//ul[@class='menu']//li[@class='ng-scope has-child']//i[@class='fas fas fa-cube']/ancestor::a</msg>
+<var>${prodhover}</var>
+<status status="PASS" start="2025-04-23T23:18:18.509541" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${prodhover}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-23T23:18:18.509541" elapsed="3.568298"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:22.077839" level="INFO">Simulating Mouse Over on element '//section[@class='container']//ul[@class='menu']//li[@class='ng-scope has-child']//i[@class='fas fas fa-cube']/ancestor::a'.</msg>
+<arg>${prodhover}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-04-23T23:18:22.077839" elapsed="0.343748"/>
+</kw>
+<status status="PASS" start="2025-04-23T23:18:18.509541" elapsed="3.912046"/>
+</kw>
+<kw name="click_list" owner="action">
+<kw name="list_product locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:22.422585" level="INFO">${list_product} = //section[@class='container']//ul[@class='menu']//li[@class='ng-scope has-child']//ul[@class='sub ng-scope']//i[@class='fa-fw fa fa-th']//ancestor::a</msg>
+<var>${list_product}</var>
+<arg>//section[@class='container']//ul[@class='menu']//li[@class='ng-scope has-child']//ul[@class='sub ng-scope']//i[@class='fa-fw fa fa-th']//ancestor::a</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:22.422585" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${list_product}</value>
+<status status="PASS" start="2025-04-23T23:18:22.422585" elapsed="0.000998"/>
+</return>
+<msg time="2025-04-23T23:18:22.423583" level="INFO">${list_product} = //section[@class='container']//ul[@class='menu']//li[@class='ng-scope has-child']//ul[@class='sub ng-scope']//i[@class='fa-fw fa fa-th']//ancestor::a</msg>
+<var>${list_product}</var>
+<status status="PASS" start="2025-04-23T23:18:22.422585" elapsed="0.000998"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${list_product}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-23T23:18:22.423583" elapsed="0.023798"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:22.447381" level="INFO">Clicking element '//section[@class='container']//ul[@class='menu']//li[@class='ng-scope has-child']//ul[@class='sub ng-scope']//i[@class='fa-fw fa fa-th']//ancestor::a'.</msg>
+<arg>${list_product}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T23:18:22.447381" elapsed="2.249553"/>
+</kw>
+<status status="PASS" start="2025-04-23T23:18:22.422585" elapsed="2.274349"/>
+</kw>
+<kw name="hover_btn_new_and_click_add_product" owner="action">
+<kw name="btn_new locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:24.698351" level="INFO">${btn_new} = //div[@class='addProductBtn sm-popup']</msg>
+<var>${btn_new}</var>
+<arg>//div[@class='addProductBtn sm-popup']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:24.698351" elapsed="0.001027"/>
+</kw>
+<return>
+<value>${btn_new}</value>
+<status status="PASS" start="2025-04-23T23:18:24.699378" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:24.699378" level="INFO">${btn_new} = //div[@class='addProductBtn sm-popup']</msg>
+<var>${btn_new}</var>
+<status status="PASS" start="2025-04-23T23:18:24.696934" elapsed="0.002444"/>
+</kw>
+<kw name="normal_product locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:24.729490" level="INFO">${normal_product} = //div[@class='addProductBtn sm-popup']//ul//li//a[contains(text(), ' Thêm hàng hóa')]</msg>
+<var>${normal_product}</var>
+<arg>//div[@class='addProductBtn sm-popup']//ul//li//a[contains(text(), ' Thêm hàng hóa')]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:24.700394" elapsed="0.029096"/>
+</kw>
+<return>
+<value>${normal_product}</value>
+<status status="PASS" start="2025-04-23T23:18:24.730484" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:24.730484" level="INFO">${normal_product} = //div[@class='addProductBtn sm-popup']//ul//li//a[contains(text(), ' Thêm hàng hóa')]</msg>
+<var>${normal_product}</var>
+<status status="PASS" start="2025-04-23T23:18:24.700394" elapsed="0.030090"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:24.730484" level="INFO">Simulating Mouse Over on element '//div[@class='addProductBtn sm-popup']'.</msg>
+<arg>${btn_new}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-04-23T23:18:24.730484" elapsed="0.755840"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:25.487329" level="INFO">Clicking element '//div[@class='addProductBtn sm-popup']//ul//li//a[contains(text(), ' Thêm hàng hóa')]'.</msg>
+<arg>${normal_product}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T23:18:25.487329" elapsed="1.175413"/>
+</kw>
+<status status="PASS" start="2025-04-23T23:18:24.696934" elapsed="1.966805"/>
+</kw>
+<kw name="add_form" owner="action">
+<kw name="Prod_code locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:26.665732" level="INFO">${prod_code} = //input[@ng-model='product.Code']</msg>
+<var>${prod_code}</var>
+<arg>//input[@ng-model='product.Code']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:26.665732" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${prod_code}</value>
+<status status="PASS" start="2025-04-23T23:18:26.666730" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:26.666730" level="INFO">${prod_code} = //input[@ng-model='product.Code']</msg>
+<var>${prod_code}</var>
+<status status="PASS" start="2025-04-23T23:18:26.665732" elapsed="0.000998"/>
+</kw>
+<kw name="prod_name locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:26.667765" level="INFO">${prod_name} = //input[@ng-model='product.Name']</msg>
+<var>${prod_name}</var>
+<arg>//input[@ng-model='product.Name']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:26.667765" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${prod_name}</value>
+<status status="PASS" start="2025-04-23T23:18:26.668725" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:26.668725" level="INFO">${prod_name} = //input[@ng-model='product.Name']</msg>
+<var>${prod_name}</var>
+<status status="PASS" start="2025-04-23T23:18:26.666730" elapsed="0.001995"/>
+</kw>
+<kw name="prod_cost locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:26.669724" level="INFO">${prod_cost} = //input[@ng-model='product.Cost']</msg>
+<var>${prod_cost}</var>
+<arg>//input[@ng-model='product.Cost']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:26.669724" elapsed="0.001000"/>
+</kw>
+<return>
+<value>${prod_cost}</value>
+<status status="PASS" start="2025-04-23T23:18:26.670724" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:26.670724" level="INFO">${prod_cost} = //input[@ng-model='product.Cost']</msg>
+<var>${prod_cost}</var>
+<status status="PASS" start="2025-04-23T23:18:26.668725" elapsed="0.001999"/>
+</kw>
+<kw name="prod_baseprice locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:26.671720" level="INFO">${prod_baseprice} = //input[@ng-model='product.BasePrice']</msg>
+<var>${prod_baseprice}</var>
+<arg>//input[@ng-model='product.BasePrice']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:26.671720" elapsed="0.000998"/>
+</kw>
+<return>
+<value>${prod_baseprice}</value>
+<status status="PASS" start="2025-04-23T23:18:26.672718" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:26.672718" level="INFO">${prod_baseprice} = //input[@ng-model='product.BasePrice']</msg>
+<var>${prod_baseprice}</var>
+<status status="PASS" start="2025-04-23T23:18:26.671720" elapsed="0.000998"/>
+</kw>
+<kw name="prod_weight locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:26.674708" level="INFO">${prod_weight} = //input[@ng-model='product.Weight']</msg>
+<var>${prod_weight}</var>
+<arg>//input[@ng-model='product.Weight']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:26.673712" elapsed="0.000996"/>
+</kw>
+<return>
+<value>${prod_weight}</value>
+<status status="PASS" start="2025-04-23T23:18:26.674708" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:26.674708" level="INFO">${prod_weight} = //input[@ng-model='product.Weight']</msg>
+<var>${prod_weight}</var>
+<status status="PASS" start="2025-04-23T23:18:26.673712" elapsed="0.000996"/>
+</kw>
+<kw name="prod_onhand locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:26.676704" level="INFO">${prod_onhand} = //input[@ng-model='product.OnHand']</msg>
+<var>${prod_onhand}</var>
+<arg>//input[@ng-model='product.OnHand']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:26.675707" elapsed="0.000997"/>
+</kw>
+<return>
+<value>${prod_onhand}</value>
+<status status="PASS" start="2025-04-23T23:18:26.676704" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:26.676704" level="INFO">${prod_onhand} = //input[@ng-model='product.OnHand']</msg>
+<var>${prod_onhand}</var>
+<status status="PASS" start="2025-04-23T23:18:26.675707" elapsed="0.000997"/>
+</kw>
+<kw name="form_arrow locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:26.678697" level="INFO">${form_arrow} = //kv-category-dropdownlist[@selected-id='product.CategoryId']//span[@class='k-select']//span[@class='k-icon k-i-arrow-s']</msg>
+<var>${form_arrow}</var>
+<arg>//kv-category-dropdownlist[@selected-id='product.CategoryId']//span[@class='k-select']//span[@class='k-icon k-i-arrow-s']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:26.677702" elapsed="0.000995"/>
+</kw>
+<return>
+<value>${form_arrow}</value>
+<status status="PASS" start="2025-04-23T23:18:26.678697" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:26.678697" level="INFO">${form_arrow} = //kv-category-dropdownlist[@selected-id='product.CategoryId']//span[@class='k-select']//span[@class='k-icon k-i-arrow-s']</msg>
+<var>${form_arrow}</var>
+<status status="PASS" start="2025-04-23T23:18:26.677702" elapsed="0.000995"/>
+</kw>
+<kw name="search_prod_group locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:26.679696" level="INFO">${search_prod_group} = //div[@class='k-animation-container']//span[@class='k-icon k-i-search']//ancestor::span[@class='k-list-filter']//input[@role='listbox']</msg>
+<var>${search_prod_group}</var>
+<arg>//div[@class='k-animation-container']//span[@class='k-icon k-i-search']//ancestor::span[@class='k-list-filter']//input[@role='listbox']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:26.679696" elapsed="0.000996"/>
+</kw>
+<return>
+<value>${search_prod_group}</value>
+<status status="PASS" start="2025-04-23T23:18:26.680692" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:26.680692" level="INFO">${search_prod_group} = //div[@class='k-animation-container']//span[@class='k-icon k-i-search']//ancestor::span[@class='k-list-filter']//input[@role='listbox']</msg>
+<var>${search_prod_group}</var>
+<status status="PASS" start="2025-04-23T23:18:26.679696" elapsed="0.000996"/>
+</kw>
+<kw name="prod_group locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:26.681689" level="INFO">${prod_group} = //div[@class='k-animation-container']//span[contains(text(), 'check tracking rabbitmq')]</msg>
+<var>${prod_group}</var>
+<arg>//div[@class='k-animation-container']//span[contains(text(), 'check tracking rabbitmq')]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:26.681689" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${prod_group}</value>
+<status status="PASS" start="2025-04-23T23:18:26.681689" elapsed="0.000998"/>
+</return>
+<msg time="2025-04-23T23:18:26.682687" level="INFO">${prod_group} = //div[@class='k-animation-container']//span[contains(text(), 'check tracking rabbitmq')]</msg>
+<var>${prod_group}</var>
+<status status="PASS" start="2025-04-23T23:18:26.680692" elapsed="0.001995"/>
+</kw>
+<kw name="prod_image locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:26.683685" level="INFO">${prod_image} = (//ul[@class='uploadImageButton']//label)[1]</msg>
+<var>${prod_image}</var>
+<arg>(//ul[@class='uploadImageButton']//label)[1]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:26.683685" elapsed="0.000996"/>
+</kw>
+<return>
+<value>${prod_image}</value>
+<status status="PASS" start="2025-04-23T23:18:26.684681" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:26.684681" level="INFO">${prod_image} = (//ul[@class='uploadImageButton']//label)[1]</msg>
+<var>${prod_image}</var>
+<status status="PASS" start="2025-04-23T23:18:26.682687" elapsed="0.001994"/>
+</kw>
+<kw name="btn_save locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:26.685679" level="INFO">${btn_save} = //a[@ng-enter='SaveProduct()']</msg>
+<var>${btn_save}</var>
+<arg>//a[@ng-enter='SaveProduct()']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:26.685679" elapsed="0.000997"/>
+</kw>
+<return>
+<value>${btn_save}</value>
+<status status="PASS" start="2025-04-23T23:18:26.686676" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:26.686676" level="INFO">${save} = //a[@ng-enter='SaveProduct()']</msg>
+<var>${save}</var>
+<status status="PASS" start="2025-04-23T23:18:26.685679" elapsed="0.000997"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${prod_code}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-23T23:18:26.686676" elapsed="0.069814"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:26.757487" level="INFO">Typing text 'code3' into text field '//input[@ng-model='product.Code']'.</msg>
+<arg>${prod_code}</arg>
+<arg>${code}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T23:18:26.756490" elapsed="0.098416"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:26.854906" level="INFO">Typing text 'Checktracking02' into text field '//input[@ng-model='product.Name']'.</msg>
+<arg>${prod_name}</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T23:18:26.854906" elapsed="0.218364"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:27.073270" level="INFO">Typing text '10000' into text field '//input[@ng-model='product.Cost']'.</msg>
+<arg>${prod_cost}</arg>
+<arg>${cost}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T23:18:27.073270" elapsed="0.190969"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:27.265277" level="INFO">Typing text '20000' into text field '//input[@ng-model='product.BasePrice']'.</msg>
+<arg>${prod_baseprice}</arg>
+<arg>${base}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T23:18:27.264239" elapsed="0.168113"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:27.433349" level="INFO">Typing text '0.1' into text field '//input[@ng-model='product.Weight']'.</msg>
+<arg>${prod_weight}</arg>
+<arg>${weight}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T23:18:27.432352" elapsed="0.152785"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:27.586135" level="INFO">Typing text '100' into text field '//input[@ng-model='product.OnHand']'.</msg>
+<arg>${prod_onhand}</arg>
+<arg>${onhand}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T23:18:27.585137" elapsed="0.166718"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:27.752852" level="INFO">Clicking element '//kv-category-dropdownlist[@selected-id='product.CategoryId']//span[@class='k-select']//span[@class='k-icon k-i-arrow-s']'.</msg>
+<arg>${form_arrow}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T23:18:27.751855" elapsed="0.296217"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-23T23:18:33.048850" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-23T23:18:28.048072" elapsed="5.000778"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:33.048850" level="INFO">Typing text 'check' into text field '//div[@class='k-animation-container']//span[@class='k-icon k-i-search']//ancestor::span[@class='k-list-filter']//input[@role='listbox']'.</msg>
+<arg>${search_prod_group}</arg>
+<arg>${searchgroup}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T23:18:33.048850" elapsed="0.099008"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:33.147858" level="INFO">Clicking element '//div[@class='k-animation-container']//span[contains(text(), 'check tracking rabbitmq')]'.</msg>
+<arg>${prod_group}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T23:18:33.147858" elapsed="0.099317"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:33.247175" level="INFO">Sending E:\Download\Ảnh\King_of_OOO.jpg to browser.</msg>
+<arg>${prod_image}</arg>
+<arg>E:\\Download\\Ảnh\\King_of_OOO.jpg</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2025-04-23T23:18:33.247175" elapsed="0.304566"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:33.551741" level="INFO">Clicking element '//a[@ng-enter='SaveProduct()']'.</msg>
+<arg>${save}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-23T23:18:33.551741" elapsed="0.155972"/>
+</kw>
+<arg>code3</arg>
+<arg>Checktracking02</arg>
+<arg>10000</arg>
+<arg>20000</arg>
+<arg>0.1</arg>
+<arg>100</arg>
+<arg>check</arg>
+<status status="PASS" start="2025-04-23T23:18:26.663739" elapsed="7.043974"/>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="search_product" owner="api">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-23T23:18:33.709715" level="INFO">${header} = {'content-type': 'application/json', 'retailer': 'newfnb01', 'branchid': '10240247', 'x-group-id': '33', 'x-retailer-id': '742710', 'authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IndYYS...</msg>
+<var>${header}</var>
+<arg>content-type=application/json</arg>
+<arg>retailer=newfnb01</arg>
+<arg>branchid=10240247</arg>
+<arg>x-group-id=33</arg>
+<arg>x-retailer-id=742710</arg>
+<arg>authorization=${TOKEN}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-23T23:18:33.709715" elapsed="0.000000"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2025-04-23T23:18:34.193030" level="INFO">GET Request : url=https://fnb.kiotviet.vn/api/branchs/10240247/masterproducts?Keyword=Checktracking02 
+ path_url=/api/branchs/10240247/masterproducts?Keyword=Checktracking02 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'retailer': 'newfnb01', 'Cookie': 'ss-id=E9MhKazyLMP1bXJlcqGf; ss-pid=AFMWluWiPYJ7VUKcG3Wr; ss-opt=temp; l_742710_68591=vi-VN; Retailer=newfnb01; newfnb=1; LatestBranch_742710_68591=29427; ss-tok=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IndYYSJ9.eyJpc3MiOiJrdnNzand0Iiwic3ViIjo2ODU5MSwiaWF0IjoxNzQ1NDI1MDk2LCJleHAiOjE3NDc4NDQyOTYsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluIiwicm9sZXMiOlsiVXNlciJdLCJrdnNvdXJjZSI6ImZuYiIsImt2c2VzIjoiODU4ZDM3MjgzM2U3NDQ5ZGEyNGExNTQzY2IxODZmNWEiLCJrdnVpZCI6Njg1OTEsImt2dWd2bmFtZSI6ODQxMjM0NTY3ODksImt2bGFuZyI6InZpLVZOIiwia3Z1dHlwZSI6MCwia3Z1bGltaXQiOiJGYWxzZSIsImt2dWFkbWluIjoiVHJ1ZSIsImt2dWFjdCI6IlRydWUiLCJrdnVsaW1pdHRyYW5zIjoiRmFsc2UiLCJrdnVzaG93c3VtIjoiVHJ1ZSIsImt2YmlkIjoyOTQyNywia3ZyaW5kaWQiOjE1LCJrdnJjb2RlIjoibmV3Zm5iMDEiLCJrdnJpZCI6NzQyNzEwLCJrdnVyaWQiOjc0MjcxMCwia3ZyZ2lkIjozMywiYXBwYnJhbmRpbmdpZCI6MCwicGVybXMiOiIifQ.QuWjoYW0D7OeZJKWD24NhwKRgQd2hbUOUaG1cM0Cq2OVJD_Uut6ajNliSUWyO4YcjAzYmBHNL3f3kt21ZYaTYnLUCwlSjviqleLhEbKcHB9If0gpMxu1tKhWYGi7lWlDnT_h3A6ZV4AK-srE3_DAMdhIen_oCcz1F80FuXCrIFqnHZf28_cTPlGfQfY0QNqM3pEpoWrWJySgvL_oJwcA36KGO9uDA4s0uz4cLRZJuVxnYe9noYF31Y6seMzIXVoRV9nwpsEcFmzivvaL4K1EuvH390e2Q1H1KI9njK-MwMlnsEfGS2OUCjqf3ZziV7WPs8DdNkGiEW7x67xgeciviA'} 
+ body=None 
+ </msg>
+<msg time="2025-04-23T23:18:34.193030" level="INFO">GET Response : url=https://fnb.kiotviet.vn/api/branchs/10240247/masterproducts?Keyword=Checktracking02 
+ status=200, reason=OK 
+ headers={'content-type': 'application/json; charset=utf-8', 'cache-control': 'private', 'vary': 'Accept,Accept-Encoding', 'fnb-pos-version': '1.0.1-f', 'x-powered-by': 'ServiceStack/5,40 Net45/Windows', 'access-control-allow-methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS, GET, POST, PUT, DELETE, OPTIONS', 'access-control-allow-headers': 'Content-Type, Origin, X-Requested-With, Content-Type, Accept, Authorization, Retailer, BranchId, Real-Time-Token, fnb-pos-version, kv-version, X-GROUP-ID, X-RETAILER-CODE, x-retailer-code, x-retailer-id, X-XSRF-Token, app, X-Group-Id, X-Branch-Id, X-Device-Id, X-Fingerprint-Key, X-App-Name, X-App-Version, X-System-Info', 'access-control-allow-origin': '*', 'access-control-expose-headers': 'FnB-POS-Version', 'x-frame-options': 'sameorigin', 'date': 'Wed, 23 Apr 2025 16:18:31 GMT', 'server': 'kiotviet', 'transfer-encoding': 'chunked', 'content-encoding': 'gzip'} 
+ body={"TotalOnHand":0,"TotalOrder":0,"TotalProduct":1,"MaxPosition":0,"Total":1,"Data":[{"GroupProductType":0,"UnitListStr":"","MasterCode":"SPC001044","VariantCount":0,"IsSaleBranch":true,"Id":15249712,"ProductGroup":1,"ProductType":2,"CategoryId":10506438,"CategoryName":"check tracking rabbitmq","CategoryNameTree":"check tracking rabbitmq","isActive":true,"HasVariants":false,"AllowsSale":true,"isDeleted":false,"Name":"Checktracking02","FullName":"Checktracking02","Code":"code3","BasePrice":20000.0000,"Cost":0.0000,"LatestPurchasePrice":0.0000,"OnHand":0,"OnHandCompareMin":0,"OnHandCompareMax":0,"CompareOnHand":0,"CompareCost":0,"CompareBasePrice":0,"CompareProductGroup":0,"Weight":0.1,"Reserved":0,"MinQuantity":0,"MaxQuantity":0,"CustomId":0,"CustomValue":0,"Unit":"","ConversionValue":1,"OrderTemplate":"","IsLotSerialControl":false,"IsRewardPoint":true,"HaveProcessedGoodsChild":false,"AllowSaleForBranch":true,"InventoryTrackingIgnore":false}],"Filter":{"__type":"KiotViet.Web.Api.BranchMasterProductList, KiotViet.Web.Api","Id":10240247,"ForSummaryRow":false,"FullInformation":false,"CategoryId":0,"KeyWord":"Checktracking02","IsExport":false,"FilterTaxId":0},"Timestamp":"2025-04-23T23:18:32.232+07:00"} 
+ </msg>
+<msg time="2025-04-23T23:18:34.193030" level="INFO">${respone} = &lt;Response [200]&gt;</msg>
+<var>${respone}</var>
+<arg>url=/api/branchs/10240247/masterproducts</arg>
+<arg>alias=login</arg>
+<arg>params=Keyword=Checktracking02</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-04-23T23:18:33.710711" elapsed="0.482319"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${respone}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-23T23:18:34.193030" elapsed="0.000998"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:34.195028" level="INFO">${rsp} = {'TotalOnHand': 0, 'TotalOrder': 0, 'TotalProduct': 1, 'MaxPosition': 0, 'Total': 1, 'Data': [{'GroupProductType': 0, 'UnitListStr': '', 'MasterCode': 'SPC001044', 'VariantCount': 0, 'IsSaleBranch': T...</msg>
+<var>${rsp}</var>
+<arg>${respone.json()}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:34.194028" elapsed="0.001000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:34.195028" level="INFO">${prodjpath} = $.Data[0].Id</msg>
+<var>${prodjpath}</var>
+<arg>$.Data[0].Id</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:34.195028" elapsed="0.000997"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2025-04-23T23:18:34.217655" level="INFO">${prodid} = [15249712]</msg>
+<var>${prodid}</var>
+<arg>${rsp}</arg>
+<arg>${prodjpath}</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2025-04-23T23:18:34.196025" elapsed="0.021630"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${prodid[0]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-23T23:18:34.217655" elapsed="0.000997"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:34.221055" level="INFO">${Produdt_id} = 15249712</msg>
+<arg>${Produdt_id}</arg>
+<arg>${prodid[0]}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-04-23T23:18:34.218652" elapsed="0.002403"/>
+</kw>
+<status status="PASS" start="2025-04-23T23:18:33.708716" elapsed="0.512339"/>
+</kw>
+<kw name="delete_product" owner="api">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-23T23:18:34.222054" level="INFO">${header} = {'content-type': 'application/json', 'retailer': 'newfnb01', 'branchid': '10240247', 'x-group-id': '33', 'x-retailer-id': '742710', 'authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IndYYS...</msg>
+<var>${header}</var>
+<arg>content-type=application/json</arg>
+<arg>retailer=newfnb01</arg>
+<arg>branchid=10240247</arg>
+<arg>x-group-id=33</arg>
+<arg>x-retailer-id=742710</arg>
+<arg>authorization=${TOKEN}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-23T23:18:34.222054" elapsed="0.000000"/>
+</kw>
+<kw name="DELETE On Session" owner="RequestsLibrary">
+<msg time="2025-04-23T23:18:34.275215" level="INFO">DELETE Request : url=https://fnb.kiotviet.vn/api/products/15249712 
+ path_url=/api/products/15249712 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'content-type': 'application/json', 'retailer': 'newfnb01', 'Cookie': 'ss-id=E9MhKazyLMP1bXJlcqGf; ss-pid=AFMWluWiPYJ7VUKcG3Wr; ss-opt=temp; l_742710_68591=vi-VN; Retailer=newfnb01; newfnb=1; LatestBranch_742710_68591=29427; ss-tok=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IndYYSJ9.eyJpc3MiOiJrdnNzand0Iiwic3ViIjo2ODU5MSwiaWF0IjoxNzQ1NDI1MDk2LCJleHAiOjE3NDc4NDQyOTYsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluIiwicm9sZXMiOlsiVXNlciJdLCJrdnNvdXJjZSI6ImZuYiIsImt2c2VzIjoiODU4ZDM3MjgzM2U3NDQ5ZGEyNGExNTQzY2IxODZmNWEiLCJrdnVpZCI6Njg1OTEsImt2dWd2bmFtZSI6ODQxMjM0NTY3ODksImt2bGFuZyI6InZpLVZOIiwia3Z1dHlwZSI6MCwia3Z1bGltaXQiOiJGYWxzZSIsImt2dWFkbWluIjoiVHJ1ZSIsImt2dWFjdCI6IlRydWUiLCJrdnVsaW1pdHRyYW5zIjoiRmFsc2UiLCJrdnVzaG93c3VtIjoiVHJ1ZSIsImt2YmlkIjoyOTQyNywia3ZyaW5kaWQiOjE1LCJrdnJjb2RlIjoibmV3Zm5iMDEiLCJrdnJpZCI6NzQyNzEwLCJrdnVyaWQiOjc0MjcxMCwia3ZyZ2lkIjozMywiYXBwYnJhbmRpbmdpZCI6MCwicGVybXMiOiIifQ.QuWjoYW0D7OeZJKWD24NhwKRgQd2hbUOUaG1cM0Cq2OVJD_Uut6ajNliSUWyO4YcjAzYmBHNL3f3kt21ZYaTYnLUCwlSjviqleLhEbKcHB9If0gpMxu1tKhWYGi7lWlDnT_h3A6ZV4AK-srE3_DAMdhIen_oCcz1F80FuXCrIFqnHZf28_cTPlGfQfY0QNqM3pEpoWrWJySgvL_oJwcA36KGO9uDA4s0uz4cLRZJuVxnYe9noYF31Y6seMzIXVoRV9nwpsEcFmzivvaL4K1EuvH390e2Q1H1KI9njK-MwMlnsEfGS2OUCjqf3ZziV7WPs8DdNkGiEW7x67xgeciviA', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg time="2025-04-23T23:18:34.275215" level="INFO">DELETE Response : url=https://fnb.kiotviet.vn/api/products/15249712 
+ status=200, reason=OK 
+ headers={'content-type': 'application/json; charset=utf-8', 'cache-control': 'private', 'vary': 'Accept,Accept-Encoding', 'fnb-pos-version': '1.0.1-f', 'x-powered-by': 'ServiceStack/5,40 Net45/Windows', 'access-control-allow-methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS, GET, POST, PUT, DELETE, OPTIONS', 'access-control-allow-headers': 'Content-Type, Origin, X-Requested-With, Content-Type, Accept, Authorization, Retailer, BranchId, Real-Time-Token, fnb-pos-version, kv-version, X-GROUP-ID, X-RETAILER-CODE, x-retailer-code, x-retailer-id, X-XSRF-Token, app, X-Group-Id, X-Branch-Id, X-Device-Id, X-Fingerprint-Key, X-App-Name, X-App-Version, X-System-Info', 'access-control-allow-origin': '*', 'access-control-expose-headers': 'FnB-POS-Version', 'x-frame-options': 'sameorigin', 'date': 'Wed, 23 Apr 2025 16:18:31 GMT', 'server': 'kiotviet', 'transfer-encoding': 'chunked', 'content-encoding': 'gzip'} 
+ body={"Message":"Xóa dữ liệu thành công"} 
+ </msg>
+<msg time="2025-04-23T23:18:34.275215" level="INFO">${del} = &lt;Response [200]&gt;</msg>
+<var>${del}</var>
+<arg>url=/api/products/${Produdt_id}</arg>
+<arg>alias=login</arg>
+<doc>Sends a DELETE request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-04-23T23:18:34.222054" elapsed="0.054003"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${del}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2025-04-23T23:18:34.276233" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-04-23T23:18:34.222054" elapsed="0.054179"/>
+</kw>
+<arg>search_product</arg>
+<arg>delete_product</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-04-23T23:18:33.708716" elapsed="0.567517"/>
+</kw>
+<status status="PASS" start="2025-04-23T23:18:15.493914" elapsed="18.783330"/>
+</test>
+<test id="s1-t3" name="Tcs3" line="24">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open browser url">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:34.282980" level="INFO">Using existing browser from index 1.</msg>
+<msg time="2025-04-23T23:18:34.282980" level="INFO">Opening url 'https://fnb.kiotviet.vn/'</msg>
+<arg>${url_goto}</arg>
+<arg>chrome</arg>
+<arg>browser1</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-23T23:18:34.282980" elapsed="1.588394"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-23T23:18:35.871374" elapsed="0.099015"/>
+</kw>
+<kw name="login1" owner="action">
+<kw name="Retailer locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:35.971683" level="INFO">${retailer} = //*[@id="Retailer"]</msg>
+<var>${retailer}</var>
+<arg>//*[@id="Retailer"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:35.971683" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${retailer}</value>
+<status status="PASS" start="2025-04-23T23:18:35.971683" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:35.971683" level="INFO">${retail} = //*[@id="Retailer"]</msg>
+<var>${retail}</var>
+<status status="PASS" start="2025-04-23T23:18:35.971380" elapsed="0.000303"/>
+</kw>
+<kw name="username locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:35.972992" level="INFO">${username} = //*[@id="UserName"]</msg>
+<var>${username}</var>
+<arg>//*[@id="UserName"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:35.972685" elapsed="0.000307"/>
+</kw>
+<return>
+<value>${username}</value>
+<status status="PASS" start="2025-04-23T23:18:35.972992" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:35.973192" level="INFO">${user} = //*[@id="UserName"]</msg>
+<var>${user}</var>
+<status status="PASS" start="2025-04-23T23:18:35.971683" elapsed="0.001509"/>
+</kw>
+<kw name="pw locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:35.973776" level="INFO">${pw} = //*[@id="Password"]</msg>
+<var>${pw}</var>
+<arg>//*[@id="Password"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:35.973776" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${pw}</value>
+<status status="PASS" start="2025-04-23T23:18:35.973776" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:35.973776" level="INFO">${pw} = //*[@id="Password"]</msg>
+<var>${pw}</var>
+<status status="PASS" start="2025-04-23T23:18:35.973192" elapsed="0.000584"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:41.277657" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-23T23:18:41.277657" level="FAIL">Element '//*[@id="Retailer"]' not visible after 5 seconds.</msg>
+<arg>${retail}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-04-23T23:18:35.973776" elapsed="5.303881">Element '//*[@id="Retailer"]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${retail}</arg>
+<arg>${retailer}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:18:41.277657" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${user}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:18:41.277657" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${pw}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:18:41.277657" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${ql}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:18:41.277657" elapsed="0.000000"/>
+</kw>
+<arg>newfnb01</arg>
+<arg>admin</arg>
+<arg>4321</arg>
+<status status="FAIL" start="2025-04-23T23:18:35.970389" elapsed="5.307268">Element '//*[@id="Retailer"]' not visible after 5 seconds.</status>
+</kw>
+<kw name="loginapi" owner="api">
+<status status="NOT RUN" start="2025-04-23T23:18:41.277657" elapsed="0.003760"/>
+</kw>
+<status status="FAIL" start="2025-04-23T23:18:34.282287" elapsed="6.999130">Element '//*[@id="Retailer"]' not visible after 5 seconds.</status>
+</kw>
+<arg>Open browser url</arg>
+<arg>create_client</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="FAIL" start="2025-04-23T23:18:34.282287" elapsed="6.999130">Element '//*[@id="Retailer"]' not visible after 5 seconds.</status>
+</kw>
+<kw name="del_cus" owner="action" type="TEARDOWN">
+<kw name="delete locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:41.283418" level="INFO">${delete_cus} = //article[@class='kv-group-btn fnb-groub-btn-mobile']//i[@class='far fa-trash-alt']//ancestor::a</msg>
+<var>${delete_cus}</var>
+<arg>//article[@class='kv-group-btn fnb-groub-btn-mobile']//i[@class='far fa-trash-alt']//ancestor::a</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:41.282421" elapsed="0.000997"/>
+</kw>
+<return>
+<value>${delete_cus}</value>
+<status status="PASS" start="2025-04-23T23:18:41.283418" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:41.283418" level="INFO">${delete_cus} = //article[@class='kv-group-btn fnb-groub-btn-mobile']//i[@class='far fa-trash-alt']//ancestor::a</msg>
+<var>${delete_cus}</var>
+<status status="PASS" start="2025-04-23T23:18:41.282421" elapsed="0.000997"/>
+</kw>
+<kw name="del_cus_pop" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:41.284416" level="INFO">${del_pop} = //div[@class='k-widget k-window k-window-poup k-window-alert k-window-processingSector-alert kv-window kv-close-popup window-error']//ancestor::div[@class='k-window-titlebar k-header']</msg>
+<var>${del_pop}</var>
+<arg>//div[@class='k-widget k-window k-window-poup k-window-alert k-window-processingSector-alert kv-window kv-close-popup window-error']//ancestor::div[@class='k-window-titlebar k-header']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:41.283418" elapsed="0.000998"/>
+</kw>
+<return>
+<value>${del_pop}</value>
+<status status="PASS" start="2025-04-23T23:18:41.284416" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:41.284416" level="INFO">${del_pop} = //div[@class='k-widget k-window k-window-poup k-window-alert k-window-processingSector-alert kv-window kv-close-popup window-error']//ancestor::div[@class='k-window-titlebar k-header']</msg>
+<var>${del_pop}</var>
+<status status="PASS" start="2025-04-23T23:18:41.283418" elapsed="0.000998"/>
+</kw>
+<kw name="del_cus_confirm" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:41.285412" level="INFO">${delcus_confirm} = //div[@class='kv-window-footer']//button[@ng-enter='onConfirm()']</msg>
+<var>${delcus_confirm}</var>
+<arg>//div[@class='kv-window-footer']//button[@ng-enter='onConfirm()']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:41.284416" elapsed="0.000996"/>
+</kw>
+<return>
+<value>${delcus_confirm}</value>
+<status status="PASS" start="2025-04-23T23:18:41.285412" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:41.285412" level="INFO">${delcus_confirm} = //div[@class='kv-window-footer']//button[@ng-enter='onConfirm()']</msg>
+<var>${delcus_confirm}</var>
+<status status="PASS" start="2025-04-23T23:18:41.284416" elapsed="0.000996"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:44.544564" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-23T23:18:44.544564" level="FAIL">Element '//article[@class='kv-group-btn fnb-groub-btn-mobile']//i[@class='far fa-trash-alt']//ancestor::a' not visible after 3 seconds.</msg>
+<arg>${delete_cus}</arg>
+<arg>3s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-04-23T23:18:41.285412" elapsed="3.260165">Element '//article[@class='kv-group-btn fnb-groub-btn-mobile']//i[@class='far fa-trash-alt']//ancestor::a' not visible after 3 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:44.546558" level="INFO">Clicking element '//article[@class='kv-group-btn fnb-groub-btn-mobile']//i[@class='far fa-trash-alt']//ancestor::a'.</msg>
+<msg time="2025-04-23T23:18:44.683241" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-23T23:18:44.683241" level="FAIL">Element with locator '//article[@class='kv-group-btn fnb-groub-btn-mobile']//i[@class='far fa-trash-alt']//ancestor::a' not found.</msg>
+<arg>${delete_cus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-04-23T23:18:44.545577" elapsed="0.137664">Element with locator '//article[@class='kv-group-btn fnb-groub-btn-mobile']//i[@class='far fa-trash-alt']//ancestor::a' not found.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:49.871224" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-23T23:18:49.871224" level="FAIL">Element '//div[@class='k-widget k-window k-window-poup k-window-alert k-window-processingSector-alert kv-window kv-close-popup window-error']//ancestor::div[@class='k-window-titlebar k-header']' not visible after 5 seconds.</msg>
+<arg>${del_pop}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-04-23T23:18:44.683241" elapsed="5.203569">Element '//div[@class='k-widget k-window k-window-poup k-window-alert k-window-processingSector-alert kv-window kv-close-popup window-error']//ancestor::div[@class='k-window-titlebar k-header']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:49.886810" level="INFO">Clicking element '//div[@class='kv-window-footer']//button[@ng-enter='onConfirm()']'.</msg>
+<msg time="2025-04-23T23:18:50.036964" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-23T23:18:50.036964" level="FAIL">Element with locator '//div[@class='kv-window-footer']//button[@ng-enter='onConfirm()']' not found.</msg>
+<arg>${delcus_confirm}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-04-23T23:18:49.886810" elapsed="0.150154">Element with locator '//div[@class='kv-window-footer']//button[@ng-enter='onConfirm()']' not found.</status>
+</kw>
+<status status="FAIL" start="2025-04-23T23:18:41.282421" elapsed="8.754543">Several failures occurred:
+
+1) Element '//article[@class='kv-group-btn fnb-groub-btn-mobile']//i[@class='far fa-trash-alt']//ancestor::a' not visible after 3 seconds.
+
+2) Element with locator '//article[@class='kv-group-btn fnb-groub-btn-mobile']//i[@class='far fa-trash-alt']//ancestor::a' not found.
+
+3) Element '//div[@class='k-widget k-window k-window-poup k-window-alert k-window-processingSector-alert kv-window kv-close-popup window-error']//ancestor::div[@class='k-window-titlebar k-header']' not visible after 5 seconds.
+
+4) Element with locator '//div[@class='kv-window-footer']//button[@ng-enter='onConfirm()']' not found.</status>
+</kw>
+<status status="FAIL" start="2025-04-23T23:18:34.280244" elapsed="15.756720">Setup failed:
+Element '//*[@id="Retailer"]' not visible after 5 seconds.
+
+Also teardown failed:
+Several failures occurred:
+
+1) Element '//article[@class='kv-group-btn fnb-groub-btn-mobile']//i[@class='far fa-trash-alt']//ancestor::a' not visible after 3 seconds.
+
+2) Element with locator '//article[@class='kv-group-btn fnb-groub-btn-mobile']//i[@class='far fa-trash-alt']//ancestor::a' not found.
+
+3) Element '//div[@class='k-widget k-window k-window-poup k-window-alert k-window-processingSector-alert kv-window kv-close-popup window-error']//ancestor::div[@class='k-window-titlebar k-header']' not visible after 5 seconds.
+
+4) Element with locator '//div[@class='kv-window-footer']//button[@ng-enter='onConfirm()']' not found.</status>
+</test>
+<test id="s1-t4" name="tcs4" line="33">
+<kw name="TAG_setup" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:50.052585" level="INFO">Using existing browser from index 1.</msg>
+<msg time="2025-04-23T23:18:50.052585" level="INFO">Opening url 'https://fnb.kiotviet.vn/'</msg>
+<arg>${url_goto}</arg>
+<arg>chrome</arg>
+<arg>browser1</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-23T23:18:50.052585" elapsed="1.413784"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-23T23:18:51.466369" elapsed="0.177946"/>
+</kw>
+<status status="PASS" start="2025-04-23T23:18:50.052585" elapsed="1.591730"/>
+</kw>
+<kw name="login_web">
+<kw name="tag_login" owner="action">
+<kw name="err_login_msg" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:51.644315" level="INFO">${err_log_msg} = //div[@class='validation-summary-errors']//ul/li</msg>
+<var>${err_log_msg}</var>
+<arg>//div[@class='validation-summary-errors']//ul/li</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:51.644315" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${err_log_msg}</value>
+<status status="PASS" start="2025-04-23T23:18:51.644315" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:51.644315" level="INFO">${err_log_msg} = //div[@class='validation-summary-errors']//ul/li</msg>
+<var>${err_log_msg}</var>
+<status status="PASS" start="2025-04-23T23:18:51.644315" elapsed="0.000000"/>
+</kw>
+<kw name="login1" owner="action">
+<kw name="Retailer locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:51.644315" level="INFO">${retailer} = //*[@id="Retailer"]</msg>
+<var>${retailer}</var>
+<arg>//*[@id="Retailer"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:51.644315" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${retailer}</value>
+<status status="PASS" start="2025-04-23T23:18:51.644315" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:51.644315" level="INFO">${retail} = //*[@id="Retailer"]</msg>
+<var>${retail}</var>
+<status status="PASS" start="2025-04-23T23:18:51.644315" elapsed="0.000000"/>
+</kw>
+<kw name="username locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:51.644315" level="INFO">${username} = //*[@id="UserName"]</msg>
+<var>${username}</var>
+<arg>//*[@id="UserName"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:51.644315" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${username}</value>
+<status status="PASS" start="2025-04-23T23:18:51.644315" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:51.644315" level="INFO">${user} = //*[@id="UserName"]</msg>
+<var>${user}</var>
+<status status="PASS" start="2025-04-23T23:18:51.644315" elapsed="0.000000"/>
+</kw>
+<kw name="pw locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:51.644315" level="INFO">${pw} = //*[@id="Password"]</msg>
+<var>${pw}</var>
+<arg>//*[@id="Password"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:51.644315" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${pw}</value>
+<status status="PASS" start="2025-04-23T23:18:51.644315" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:51.644315" level="INFO">${pw} = //*[@id="Password"]</msg>
+<var>${pw}</var>
+<status status="PASS" start="2025-04-23T23:18:51.644315" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:18:56.827580" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-23T23:18:56.827580" level="FAIL">Element '//*[@id="Retailer"]' not visible after 5 seconds.</msg>
+<arg>${retail}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-04-23T23:18:51.644315" elapsed="5.183265">Element '//*[@id="Retailer"]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${retail}</arg>
+<arg>${retailer}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:18:56.827580" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${user}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:18:56.827580" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${pw}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:18:56.827580" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${ql}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:18:56.827580" elapsed="0.000000"/>
+</kw>
+<arg>${retailer}</arg>
+<arg>${username}</arg>
+<arg>${pw}</arg>
+<status status="FAIL" start="2025-04-23T23:18:51.644315" elapsed="5.183265">Element '//*[@id="Retailer"]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${err_log_msg}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-04-23T23:18:56.827580" elapsed="0.000000"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>${err_log_msg}</arg>
+<arg>${resl}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:18:56.827580" elapsed="0.000000"/>
+</kw>
+<arg>${retailer}</arg>
+<arg>${username}</arg>
+<arg>${pw}</arg>
+<arg>${resl}</arg>
+<status status="FAIL" start="2025-04-23T23:18:51.644315" elapsed="5.183265">Element '//*[@id="Retailer"]' not visible after 5 seconds.</status>
+</kw>
+<arg>${EMPTY}</arg>
+<arg>${EMPTY}</arg>
+<arg>${EMPTY}</arg>
+<arg>Bạn hãy nhập đầy đủ thông tin các trường!</arg>
+<status status="FAIL" start="2025-04-23T23:18:51.644315" elapsed="5.183265">Element '//*[@id="Retailer"]' not visible after 5 seconds.</status>
+</kw>
+<kw name="login_web">
+<kw name="tag_login" owner="action">
+<kw name="err_login_msg" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:56.843201" level="INFO">${err_log_msg} = //div[@class='validation-summary-errors']//ul/li</msg>
+<var>${err_log_msg}</var>
+<arg>//div[@class='validation-summary-errors']//ul/li</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:56.843201" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${err_log_msg}</value>
+<status status="PASS" start="2025-04-23T23:18:56.843201" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:56.843201" level="INFO">${err_log_msg} = //div[@class='validation-summary-errors']//ul/li</msg>
+<var>${err_log_msg}</var>
+<status status="PASS" start="2025-04-23T23:18:56.843201" elapsed="0.000000"/>
+</kw>
+<kw name="login1" owner="action">
+<kw name="Retailer locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:56.843201" level="INFO">${retailer} = //*[@id="Retailer"]</msg>
+<var>${retailer}</var>
+<arg>//*[@id="Retailer"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:56.843201" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${retailer}</value>
+<status status="PASS" start="2025-04-23T23:18:56.843201" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:56.843201" level="INFO">${retail} = //*[@id="Retailer"]</msg>
+<var>${retail}</var>
+<status status="PASS" start="2025-04-23T23:18:56.843201" elapsed="0.000000"/>
+</kw>
+<kw name="username locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:56.843201" level="INFO">${username} = //*[@id="UserName"]</msg>
+<var>${username}</var>
+<arg>//*[@id="UserName"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:56.843201" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${username}</value>
+<status status="PASS" start="2025-04-23T23:18:56.843201" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:56.843201" level="INFO">${user} = //*[@id="UserName"]</msg>
+<var>${user}</var>
+<status status="PASS" start="2025-04-23T23:18:56.843201" elapsed="0.000000"/>
+</kw>
+<kw name="pw locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:18:56.843201" level="INFO">${pw} = //*[@id="Password"]</msg>
+<var>${pw}</var>
+<arg>//*[@id="Password"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:18:56.843201" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${pw}</value>
+<status status="PASS" start="2025-04-23T23:18:56.843201" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:18:56.843201" level="INFO">${pw} = //*[@id="Password"]</msg>
+<var>${pw}</var>
+<status status="PASS" start="2025-04-23T23:18:56.843201" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:19:02.098247" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-23T23:19:02.098247" level="FAIL">Element '//*[@id="Retailer"]' not visible after 5 seconds.</msg>
+<arg>${retail}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-04-23T23:18:56.843201" elapsed="5.255976">Element '//*[@id="Retailer"]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${retail}</arg>
+<arg>${retailer}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:19:02.099177" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${user}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:19:02.099177" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${pw}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:19:02.099177" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${ql}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:19:02.099177" elapsed="0.001031"/>
+</kw>
+<arg>${retailer}</arg>
+<arg>${username}</arg>
+<arg>${pw}</arg>
+<status status="FAIL" start="2025-04-23T23:18:56.843201" elapsed="5.257007">Element '//*[@id="Retailer"]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${err_log_msg}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-04-23T23:19:02.100208" elapsed="0.000000"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>${err_log_msg}</arg>
+<arg>${resl}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:19:02.100208" elapsed="0.000000"/>
+</kw>
+<arg>${retailer}</arg>
+<arg>${username}</arg>
+<arg>${pw}</arg>
+<arg>${resl}</arg>
+<status status="FAIL" start="2025-04-23T23:18:56.843201" elapsed="5.257007">Element '//*[@id="Retailer"]' not visible after 5 seconds.</status>
+</kw>
+<arg>newfnb01</arg>
+<arg>admin</arg>
+<arg>321</arg>
+<arg>Tên đăng nhập hoặc mật khẩu chưa đúng</arg>
+<status status="FAIL" start="2025-04-23T23:18:56.827580" elapsed="5.272628">Element '//*[@id="Retailer"]' not visible after 5 seconds.</status>
+</kw>
+<kw name="login_web">
+<kw name="tag_login" owner="action">
+<kw name="err_login_msg" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:19:02.102166" level="INFO">${err_log_msg} = //div[@class='validation-summary-errors']//ul/li</msg>
+<var>${err_log_msg}</var>
+<arg>//div[@class='validation-summary-errors']//ul/li</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:19:02.102166" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${err_log_msg}</value>
+<status status="PASS" start="2025-04-23T23:19:02.102166" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:19:02.102166" level="INFO">${err_log_msg} = //div[@class='validation-summary-errors']//ul/li</msg>
+<var>${err_log_msg}</var>
+<status status="PASS" start="2025-04-23T23:19:02.101169" elapsed="0.000997"/>
+</kw>
+<kw name="login1" owner="action">
+<kw name="Retailer locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:19:02.103203" level="INFO">${retailer} = //*[@id="Retailer"]</msg>
+<var>${retailer}</var>
+<arg>//*[@id="Retailer"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:19:02.103203" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${retailer}</value>
+<status status="PASS" start="2025-04-23T23:19:02.103203" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:19:02.103203" level="INFO">${retail} = //*[@id="Retailer"]</msg>
+<var>${retail}</var>
+<status status="PASS" start="2025-04-23T23:19:02.103203" elapsed="0.000000"/>
+</kw>
+<kw name="username locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:19:02.104202" level="INFO">${username} = //*[@id="UserName"]</msg>
+<var>${username}</var>
+<arg>//*[@id="UserName"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:19:02.104202" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${username}</value>
+<status status="PASS" start="2025-04-23T23:19:02.104202" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:19:02.104202" level="INFO">${user} = //*[@id="UserName"]</msg>
+<var>${user}</var>
+<status status="PASS" start="2025-04-23T23:19:02.104202" elapsed="0.000000"/>
+</kw>
+<kw name="pw locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T23:19:02.105196" level="INFO">${pw} = //*[@id="Password"]</msg>
+<var>${pw}</var>
+<arg>//*[@id="Password"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T23:19:02.104202" elapsed="0.000994"/>
+</kw>
+<return>
+<value>${pw}</value>
+<status status="PASS" start="2025-04-23T23:19:02.105196" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T23:19:02.105196" level="INFO">${pw} = //*[@id="Password"]</msg>
+<var>${pw}</var>
+<status status="PASS" start="2025-04-23T23:19:02.104202" elapsed="0.000994"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:19:07.455329" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-23T23:19:07.455329" level="FAIL">Element '//*[@id="Retailer"]' not visible after 5 seconds.</msg>
+<arg>${retail}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-04-23T23:19:02.105196" elapsed="5.350133">Element '//*[@id="Retailer"]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${retail}</arg>
+<arg>${retailer}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:19:07.455329" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${user}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:19:07.455329" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${pw}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:19:07.455329" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${ql}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:19:07.455329" elapsed="0.000000"/>
+</kw>
+<arg>${retailer}</arg>
+<arg>${username}</arg>
+<arg>${pw}</arg>
+<status status="FAIL" start="2025-04-23T23:19:02.102166" elapsed="5.353163">Element '//*[@id="Retailer"]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${err_log_msg}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-04-23T23:19:07.455329" elapsed="0.000000"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>${err_log_msg}</arg>
+<arg>${resl}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2025-04-23T23:19:07.455329" elapsed="0.000000"/>
+</kw>
+<arg>${retailer}</arg>
+<arg>${username}</arg>
+<arg>${pw}</arg>
+<arg>${resl}</arg>
+<status status="FAIL" start="2025-04-23T23:19:02.101169" elapsed="5.354160">Element '//*[@id="Retailer"]' not visible after 5 seconds.</status>
+</kw>
+<arg>76oo</arg>
+<arg>admin222</arg>
+<arg>666</arg>
+<arg>Cửa hàng 76oo không tồn tại</arg>
+<status status="FAIL" start="2025-04-23T23:19:02.101169" elapsed="5.354160">Element '//*[@id="Retailer"]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-23T23:19:07.470912" elapsed="2.258018"/>
+</kw>
+<tag>fggg</tag>
+<status status="FAIL" start="2025-04-23T23:18:50.052585" elapsed="19.676345">Several failures occurred:
+
+1) Element '//*[@id="Retailer"]' not visible after 5 seconds.
+
+2) Element '//*[@id="Retailer"]' not visible after 5 seconds.
+
+3) Element '//*[@id="Retailer"]' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" start="2025-04-23T23:18:14.955118" elapsed="54.773812"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">fggg</stat>
+</tag>
+<suite>
+<stat name="Testcase" id="s1" pass="1" fail="3" skip="0">Testcase</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 26: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 29: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 32: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 36: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 39: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 42: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 45: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 49: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 53: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 56: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 59: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 62: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 65: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 68: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 71: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 75: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 79: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 83: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 86: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 89: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 92: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 95: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 98: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 101: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 104: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 107: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T23:18:15.283098" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 110: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

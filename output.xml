@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.2 on win32)" generated="2025-04-23T23:03:34.758799" rpa="false" schemaversion="5">
+<suite id="s1" name="Newfile" source="C:\Users\gingi\Auto\newfile.robot">
+<test id="s1-t1" name="Tcs1" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-23T23:03:35.111857" level="INFO">Opening browser 'chrome' to base url 'https://toilatester.wordpress.com/2018/02/13/nhung-tuyet-ky-trong-viec-dung-robotframework/'.</msg>
+<arg>https://toilatester.wordpress.com/2018/02/13/nhung-tuyet-ky-trong-viec-dung-robotframework/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-23T23:03:35.111857" elapsed="9.249380"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-23T23:03:47.362834" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-23T23:03:44.362231" elapsed="3.000603"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-23T23:03:47.362834" elapsed="2.233528"/>
+</kw>
+<status status="PASS" start="2025-04-23T23:03:35.111857" elapsed="14.484505"/>
+</test>
+<status status="PASS" start="2025-04-23T23:03:34.774391" elapsed="14.821971"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Newfile" id="s1" pass="1" fail="0" skip="0">Newfile</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

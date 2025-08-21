@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.2 on win32)" generated="2025-04-23T20:41:22.683088" rpa="false" schemaversion="5">
+<suite id="s1" name="Auto" source="C:\Users\gingi\Auto">
+<suite id="s1-s1" name="Suite" source="C:\Users\gingi\Auto\suite">
+<suite id="s1-s1-s1" name="Newtesy1" source="C:\Users\gingi\Auto\suite\newtesy1.robot">
+<test id="s1-s1-s1-t1" name="Tcs1" line="10">
+<kw name="login1" owner="action">
+<kw name="Retailer locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T20:41:23.222852" level="INFO">${retailer} = //*[@id="Retailer"]</msg>
+<var>${retailer}</var>
+<arg>//*[@id="Retailer"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T20:41:23.222852" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${retailer}</value>
+<status status="PASS" start="2025-04-23T20:41:23.222852" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T20:41:23.222852" level="INFO">${retail} = //*[@id="Retailer"]</msg>
+<var>${retail}</var>
+<status status="PASS" start="2025-04-23T20:41:23.222852" elapsed="0.015623"/>
+</kw>
+<kw name="username locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T20:41:23.240553" level="INFO">${username} = //*[@id="UserName"]</msg>
+<var>${username}</var>
+<arg>//*[@id="UserName"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T20:41:23.239513" elapsed="0.001040"/>
+</kw>
+<return>
+<value>${username}</value>
+<status status="PASS" start="2025-04-23T20:41:23.240553" elapsed="0.001037"/>
+</return>
+<msg time="2025-04-23T20:41:23.241590" level="INFO">${user} = //*[@id="UserName"]</msg>
+<var>${user}</var>
+<status status="PASS" start="2025-04-23T20:41:23.238475" elapsed="0.003115"/>
+</kw>
+<kw name="pw locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T20:41:23.243584" level="INFO">${pw} = //*[@id="Password"]</msg>
+<var>${pw}</var>
+<arg>//*[@id="Password"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T20:41:23.242547" elapsed="0.001037"/>
+</kw>
+<return>
+<value>${pw}</value>
+<status status="PASS" start="2025-04-23T20:41:23.243584" elapsed="0.000968"/>
+</return>
+<msg time="2025-04-23T20:41:23.244552" level="INFO">${pw} = //*[@id="Password"]</msg>
+<var>${pw}</var>
+<status status="PASS" start="2025-04-23T20:41:23.242547" elapsed="0.003034"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-04-23T20:41:23.246538" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-04-23T20:41:23.246538" level="FAIL">No browser is open.</msg>
+<arg>${retail}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-04-23T20:41:23.245581" elapsed="0.004943">No browser is open.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${retail}</arg>
+<arg>${retailer}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T20:41:23.250524" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${user}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T20:41:23.250524" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${pw}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T20:41:23.251521" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${ql}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-23T20:41:23.251521" elapsed="0.000000"/>
+</kw>
+<arg>newfnb01</arg>
+<arg>admin</arg>
+<arg>4321</arg>
+<status status="FAIL" start="2025-04-23T20:41:23.222852" elapsed="0.028669">No browser is open.</status>
+</kw>
+<kw name="Teardown" owner="action" type="TEARDOWN">
+<kw name="Retailer locator" owner="locator">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-23T20:41:23.253516" level="INFO">${retailer} = //*[@id="Retailer"]</msg>
+<var>${retailer}</var>
+<arg>//*[@id="Retailer"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-23T20:41:23.253516" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${retailer}</value>
+<status status="PASS" start="2025-04-23T20:41:23.254513" elapsed="0.000000"/>
+</return>
+<msg time="2025-04-23T20:41:23.254513" level="INFO">${retailer} = //*[@id="Retailer"]</msg>
+<var>${retailer}</var>
+<status status="PASS" start="2025-04-23T20:41:23.252521" elapsed="0.001992"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-04-23T20:41:23.256509" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-04-23T20:41:23.257818" level="FAIL">No browser is open.</msg>
+<arg>${pop}</arg>
+<arg>10s</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-04-23T20:41:23.256509" elapsed="0.001309">No browser is open.</status>
+</kw>
+<msg time="2025-04-23T20:41:23.257818" level="INFO">${popup} = False</msg>
+<var>${popup}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${pop}</arg>
+<arg>10s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-04-23T20:41:23.255512" elapsed="0.002306"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${popup}'=='True'</arg>
+<arg>Press Keys</arg>
+<arg>//body</arg>
+<arg>ESCAPE</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-04-23T20:41:23.257818" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-04-23T20:41:23.257818" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-04-23T20:41:23.257818" level="FAIL">No browser is open.</msg>
+<arg>${user}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-04-23T20:41:23.257818" elapsed="0.000000">No browser is open.</status>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-04-23T20:41:23.257818" level="INFO">Simulating Mouse Over on element '//a[@class='dpib userName']'.</msg>
+<msg time="2025-04-23T20:41:23.257818" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-04-23T20:41:23.257818" level="FAIL">No browser is open.</msg>
+<arg>${user}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="FAIL" start="2025-04-23T20:41:23.257818" elapsed="0.000000">No browser is open.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-04-23T20:41:23.257818" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-04-23T20:41:23.257818" level="FAIL">No browser is open.</msg>
+<arg>${out}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-04-23T20:41:23.257818" elapsed="0.000000">No browser is open.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-23T20:41:23.273535" level="INFO">Clicking element '//ul[@ng-show='showUserMenu']//i[@class='far fa-sign-out fa-fw']'.</msg>
+<msg time="2025-04-23T20:41:23.274382" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-04-23T20:41:23.274382" level="FAIL">No browser is open.</msg>
+<arg>${out}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-04-23T20:41:23.257818" elapsed="0.019268">No browser is open.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-04-23T20:41:23.278587" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-04-23T20:41:23.278587" level="FAIL">No browser is open.</msg>
+<arg>${retailer}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-04-23T20:41:23.277086" elapsed="0.003766">No browser is open.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-23T20:41:23.280852" elapsed="0.001121"/>
+</kw>
+<doc>Logout</doc>
+<status status="FAIL" start="2025-04-23T20:41:23.252521" elapsed="0.029452">Several failures occurred:
+
+1) No browser is open.
+
+2) No browser is open.
+
+3) No browser is open.
+
+4) No browser is open.
+
+5) No browser is open.</status>
+</kw>
+<status status="FAIL" start="2025-04-23T20:41:23.222852" elapsed="0.059121">No browser is open.
+
+Also teardown failed:
+Several failures occurred:
+
+1) No browser is open.
+
+2) No browser is open.
+
+3) No browser is open.
+
+4) No browser is open.
+
+5) No browser is open.</status>
+</test>
+<status status="FAIL" start="2025-04-23T20:41:22.721337" elapsed="0.560636"/>
+</suite>
+<status status="FAIL" start="2025-04-23T20:41:22.705756" elapsed="0.576217"/>
+</suite>
+<status status="FAIL" start="2025-04-23T20:41:22.688036" elapsed="0.593937"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Auto" id="s1" pass="0" fail="1" skip="0">Auto</stat>
+<stat name="Suite" id="s1-s1" pass="0" fail="1" skip="0">Auto.Suite</stat>
+<stat name="Newtesy1" id="s1-s1-s1" pass="0" fail="1" skip="0">Auto.Suite.Newtesy1</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-04-23T20:41:22.980358" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:22.981317" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:22.982315" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 26: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:22.983314" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 29: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:22.984316" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 32: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:22.985308" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 36: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:22.989807" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 39: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:22.989807" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 42: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:22.989807" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 45: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:22.989807" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 49: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:23.023186" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 53: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:23.031170" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 56: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:23.031666" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 59: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:23.031666" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 62: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:23.031666" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 65: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:23.031666" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 68: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:23.039850" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 71: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:23.041851" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 75: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:23.042849" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 79: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:23.043845" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 83: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:23.044846" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 86: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:23.045838" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 89: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:23.046837" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 92: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:23.046837" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 95: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:23.048832" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 98: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:23.049831" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 101: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:23.049831" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 104: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:23.051823" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 107: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-04-23T20:41:23.051823" level="WARN">Error in file 'C:\Users\gingi\Auto\xpath\locator.robot' on line 110: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

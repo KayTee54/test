@@ -1,0 +1,6 @@
+datasources:5535c73737c9998b72de1f48501e9f47b32f319b
+commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
+suitesfrom:no-suites-from-option
+file:6ef977699402917f974792b176fda6ff1bd5a41d
+--test Newtesy1.Tcs2
+--test Newtesy1.Tcs3
