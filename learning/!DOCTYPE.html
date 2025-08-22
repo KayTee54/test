@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lesson 07 Challenge</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    header, nav, main, aside, footer { margin-bottom: 16px; }
+    .hidden { display: none; }
+    .btn { padding: 8px 12px; border: 1px solid #ccc; cursor: pointer; }
+    .btn-primary { border-color: #0b5ed7; }
+    .card { border: 1px solid #ddd; border-radius: 8px; padding: 12px; margin: 8px 0; }
+    .price { font-weight: bold; }
+    .error { color: #b00020; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+    th { background: #f5f5f5; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="site-title">Kiot Demo Shop</h1>
+    <nav>
+      <ul id="menu">
+        <li class="menu-item"><a href="#home">Home</a></li>
+        <li class="menu-item"><a href="#products">Products</a></li>
+        <li class="menu-item"><a href="#reports">Reports</a></li>
+        <li class="menu-item"><a href="#login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="login">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" autocomplete="off" />
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" />
+        <button type="button" id="login-btn" class="btn btn-primary">Sign in</button>
+        <p id="login-message" class="hidden">Welcome, <span id="who"></span>!</p>
+        <p id="login-error" class="error hidden">Invalid credentials</p>
+      </form>
+    </section>
+
+    <section id="products" data-version="v1">
+      <h2>Products</h2>
+      <div class="card product" data-sku="SP-001">
+        <h3 class="name">Shoes A</h3>
+        <p class="price" data-currency="VND">130000</p>
+        <button class="btn add-to-cart" data-id="1">Add</button>
+      </div>
+      <div class="card product featured" data-sku="SP-002">
+        <h3 class="name">Shoes B</h3>
+        <p class="price" data-currency="VND">175000</p>
+        <button class="btn add-to-cart" data-id="2">Add</button>
+      </div>
+      <div class="card product" data-sku="SP-003">
+        <h3 class="name">Hat C</h3>
+        <p class="price" data-currency="VND">85000</p>
+        <button class="btn add-to-cart" data-id="3">Add</button>
+      </div>
+    </section>
+
+    <section id="reports">
+      <h2>Revenue</h2>
+      <table id="revenue-table">
+        <thead>
+          <tr><th>#</th><th>Month</th><th>Total</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Jan</td><td class="total" data-amount="1200000">1,200,000</td></tr>
+          <tr><td>2</td><td>Feb</td><td class="total" data-amount="1560000">1,560,000</td></tr>
+          <tr><td>3</td><td>Mar</td><td class="total" data-amount="1980000">1,980,000</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <aside id="cart">
+    <h2>Cart</h2>
+    <ul id="cart-list">
+      <!-- items will be appended here -->
+    </ul>
+    <p id="cart-total" data-total="0">Total: 0</p>
+  </aside>
+
+  <footer>
+    <small>&copy; 2025 Kiot Demo</small>
+  </footer>
+
+  <script>
+    // Minimal JS to make the page interactive
+    const btn = document.getElementById('login-btn');
+    btn.addEventListener('click', function() {
+      const u = document.getElementById('username').value.trim();
+      const p = document.getElementById('password').value.trim();
+      const msg = document.getElementById('login-message');
+      const who = document.getElementById('who');
+      const err = document.getElementById('login-error');
+      if (u === 'admin' && p === '123456') {
+        who.textContent = u;
+        err.classList.add('hidden');
+        msg.classList.remove('hidden');
+      } else {
+        msg.classList.add('hidden');
+        err.classList.remove('hidden');
+      }
+    });
+
+    document.querySelectorAll('.add-to-cart').forEach(b => {
+      b.addEventListener('click', () => {
+        const card = b.closest('.product');
+        const name = card.querySelector('.name').textContent;
+        const price = parseInt(card.querySelector('.price').textContent, 10);
+        const li = document.createElement('li');
+        li.textContent = name + ' - ' + price;
+        document.getElementById('cart-list').appendChild(li);
+        const totalEl = document.getElementById('cart-total');
+        const current = parseInt(totalEl.dataset.total, 10);
+        const newTotal = current + price;
+        totalEl.dataset.total = String(newTotal);
+        totalEl.textContent = 'Total: ' + newTotal;
+      });
+    });
+  </script>
+</body>
+</html>

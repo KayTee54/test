@@ -1,0 +1,8 @@
+// CSS (khuyên dùng)
+await page.locator('[data-testid="intro"] button:first-of-type').click();
+
+// XPath (khi cần)
+await page.locator(`xpath=//*[@data-testid='intro']//button[1]`).click();
+
+// Theo text (thường bền hơn class)
+await page.getByRole('button', { name: 'Click Me!' }).click();
