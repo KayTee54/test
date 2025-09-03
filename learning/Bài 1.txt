@@ -1,20 +1,19 @@
 Bài 1:
-- css selector
-input[type="username"]
+- username:
+#username
+input[type="text"]
+input[name="username"]
+- login:
+#login-btn
 input[type="password"]
 button[class="btn btn-primary"]
 - xpath
-//input[@id='username']
 //input[@id='password']
-//button[@id='login-btn']
+//button[text()='Login']
 Bài 2:
 document.querySelector("#login-btn").addEventListener("click", function() {
   alert("Login button clicked!");
 });
-document.querySelector("#username").value = "admin";
+document.querySelector("#username").value = "tester01";
 document.querySelector("#password").value = "123456";
 document.querySelector("#login-btn").click();
-Bài 3:
-method: post
-if work: 200 
-if wrong pass: 400
