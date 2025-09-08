@@ -1,0 +1,103 @@
+# Lý thuyết về Object Types trong TypeScript
+
+**Object Types** là nền tảng của hệ thống type trong TypeScript, cực kỳ quan trọng trong test automation. Chúng giúp mô tả cấu trúc dữ liệu phức tạp, đảm bảo tính nhất quán và giảm lỗi khi làm việc với dữ liệu.
+
+## Ứng dụng phổ biến của Object Types
+
+- **Page Objects**: Đại diện cho UI elements & các thao tác tương tác.
+- **Test Data**: Lưu trữ dữ liệu người dùng, form input, test scenario.
+- **API Responses**: Mô tả các response phức tạp từ server.
+- **Configuration Objects**: Quản lý setting test, môi trường, browser options.
+
+👉 **Object Types** giúp đảm bảo cấu trúc dữ liệu nhất quán, dễ dự đoán, giảm lỗi khi phát triển và kiểm thử.
+
+---
+
+## 📝 Cú pháp cơ bản
+
+```typescript
+let user: { name: string; age: number; active: boolean } = {
+  name: "Alice",
+  age: 28,
+  active: true
+};
+```
+- Inline type annotation giúp mô tả rõ ràng cấu trúc object.
+
+---
+
+## 🔹 Optional Properties
+
+Dùng dấu `?` để chỉ ra property có thể có hoặc không.
+
+```typescript
+type TestConfig = {
+  environment: string;
+  retries?: number; // optional
+};
+```
+
+---
+
+## 🔹 Readonly Properties
+
+Dùng `readonly` để ngăn việc gán lại giá trị cho property.
+
+```typescript
+type User = {
+  readonly id: string;
+  name: string;
+};
+```
+
+---
+
+## 🔹 Index Signatures
+
+Cho phép định nghĩa object với key động, phù hợp cho các trường hợp dữ liệu không cố định.
+
+```typescript
+type ApiResponse = {
+  [key: string]: string | number;
+};
+```
+
+---
+
+## 🔹 Nested Objects
+
+Object có thể chứa object khác bên trong, giúp mô tả cấu trúc phức tạp.
+
+```typescript
+type Page = {
+  title: string;
+  elements: {
+    header: string;
+    footer: string;
+  };
+};
+```
+
+---
+
+## 🔹 Automation-Specific Types
+
+Ví dụ các kiểu object thường dùng trong test automation:
+
+```typescript
+type Locator = {
+  selector: string;
+  action: "click" | "type" | "hover";
+};
+
+type PageObject = {
+  name: string;
+  url: string;
+  locators: Locator[];
+};
+```
+
+---
+
+**Tóm lại:**  
+Object Types là công cụ mạnh mẽ giúp bạn kiểm soát, mô tả và bảo vệ cấu trúc dữ liệu trong các dự án test automation với
