@@ -44,7 +44,7 @@ type Testconfig = {
 let configStaging: Testconfig = {
     evn: "staging",
     timeout: 500,
-    retries: 5
+    retries: 3
 };
 //in thông tin configStaging ra console
 console.log("configStaging: ", configStaging);
